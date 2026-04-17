@@ -9,6 +9,25 @@ const EMPTY_DETAIL = "층에서 기업을 선택하면 상세정보가 표시됩
 const ADMIN_SESSION_KEY = "shdt_admin_authed";
 const ADMIN_PASSWORD = import.meta.env.VITE_ADMIN_PASSWORD || "Dream@12";
 const EIGHT_WITH_SPECIAL = /^(?=.*[^A-Za-z0-9]).{8}$/;
+const SMAP_BASE_URL = import.meta.env.VITE_SMAP_URL || "https://smap.seoul.go.kr/";
+const BUILDING_LAT = Number(import.meta.env.VITE_BUILDING_LAT || 37.4796);
+const BUILDING_LNG = Number(import.meta.env.VITE_BUILDING_LNG || 126.8844);
+
+function buildSMapLink() {
+  const url = new URL(SMAP_BASE_URL);
+  const params = new URLSearchParams(url.search);
+
+  // 좌표 전달: S-MAP이 사용하는 파라미터가 변경될 수 있어 일반 좌표 키를 함께 전달합니다.
+  params.set("lat", String(BUILDING_LAT));
+  params.set("lng", String(BUILDING_LNG));
+  params.set("lon", String(BUILDING_LNG));
+  params.set("center", `${BUILDING_LNG},${BUILDING_LAT}`);
+  params.set("zoom", "18");
+  params.set("source", "sh-dreamtower-portal");
+
+  url.search = params.toString();
+  return url.toString();
+}
 
 function compareFloors(a, b) {
   const parse = (value) => {
@@ -178,6 +197,9 @@ function PortalPage() {
           <p className="subtitle">층 선택과 기업 상세정보 조회를 단일 화면에서 제공합니다.</p>
         </div>
         <div className="hero-actions">
+          <a className="nav-link" href={buildSMapLink()} target="_blank" rel="noreferrer">
+            S-MAP 바로가기
+          </a>
           <a className="nav-link" href="/admin">
             관리자 이동
           </a>
@@ -250,11 +272,15 @@ function PortalPage() {
                 <div>층/호실: {selectedTenant.floorCode} / {selectedTenant.unit}</div>
                 <div>전화: {selectedTenant.phone || "-"}</div>
                 <div>이메일: {selectedTenant.email || "-"}</div>
+                <div>좌표: {BUILDING_LAT}, {BUILDING_LNG}</div>
                 <div>
                   웹사이트: {selectedTenant.website ? <a href={selectedTenant.website}>{selectedTenant.website}</a> : "-"}
                 </div>
               </div>
               <p className="desc">{selectedTenant.description || "상세 설명이 없습니다."}</p>
+              <a className="map-link" href={buildSMapLink()} target="_blank" rel="noreferrer">
+                S-MAP에서 건물 위치 보기
+              </a>
             </div>
           )}
         </aside>
