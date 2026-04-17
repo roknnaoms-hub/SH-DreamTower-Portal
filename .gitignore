@@ -1,0 +1,19 @@
+# Node
+**/node_modules/
+**/dist/
+
+# Env
+**/.env
+**/.env.local
+
+# Python
+.venv/
+__pycache__/
+
+# OS / Editor
+.DS_Store
+Thumbs.db
+.vscode/
+
+# Upload temp
+server/uploads/

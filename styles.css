@@ -1,0 +1,234 @@
+:root {
+  --bg-top: #f2eee4;
+  --bg-bottom: #d9d4c5;
+  --panel: #11131a;
+  --panel-soft: #1a1d27;
+  --ink: #f1f4ff;
+  --muted: #c9cee2;
+  --accent: #ff9f1c;
+  --accent-2: #2ec4b6;
+  --line: rgba(255, 255, 255, 0.1);
+  --danger: #ff5964;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Noto Sans KR", sans-serif;
+  color: var(--ink);
+  background: radial-gradient(circle at 10% 10%, #fff9e8 0, transparent 35%),
+    radial-gradient(circle at 90% 20%, #cce7ff 0, transparent 30%),
+    linear-gradient(160deg, var(--bg-top) 0%, var(--bg-bottom) 100%);
+  min-height: 100vh;
+}
+
+.shell {
+  width: min(1200px, 94vw);
+  margin: 24px auto 40px;
+  display: grid;
+  gap: 16px;
+}
+
+.hero {
+  background: linear-gradient(120deg, #0f172a, #1e293b);
+  border-radius: 20px;
+  padding: 28px;
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.22);
+}
+
+.eyebrow {
+  margin: 0;
+  font-size: 12px;
+  letter-spacing: 0.2em;
+  color: var(--accent-2);
+  font-weight: 700;
+}
+
+.hero h1 {
+  margin: 8px 0 6px;
+  font-size: clamp(24px, 3.2vw, 40px);
+}
+
+.subtitle {
+  margin: 0;
+  color: var(--muted);
+}
+
+.layout {
+  display: grid;
+  grid-template-columns: 220px 1fr 340px;
+  gap: 16px;
+}
+
+.panel {
+  border-radius: 16px;
+  background: linear-gradient(180deg, var(--panel) 0%, var(--panel-soft) 100%);
+  border: 1px solid var(--line);
+  padding: 14px;
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.18);
+}
+
+.panel-title,
+.panel-title-row {
+  margin-bottom: 10px;
+}
+
+.panel-title {
+  font-size: 14px;
+  color: var(--muted);
+  font-weight: 700;
+}
+
+.panel-title-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.chip {
+  display: inline-flex;
+  align-items: center;
+  border-radius: 999px;
+  padding: 4px 10px;
+  background: rgba(46, 196, 182, 0.18);
+  border: 1px solid rgba(46, 196, 182, 0.6);
+  font-size: 12px;
+}
+
+.floor-nav {
+  display: grid;
+  gap: 8px;
+  max-height: 560px;
+  overflow: auto;
+  padding-right: 4px;
+}
+
+.floor-btn {
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  background: rgba(255, 255, 255, 0.02);
+  color: var(--ink);
+  border-radius: 10px;
+  padding: 10px;
+  text-align: left;
+  cursor: pointer;
+  font-weight: 600;
+  transition: 0.2s ease;
+}
+
+.floor-btn:hover {
+  border-color: var(--accent);
+  transform: translateY(-1px);
+}
+
+.floor-btn.active {
+  background: linear-gradient(90deg, rgba(255, 159, 28, 0.22), rgba(255, 89, 100, 0.2));
+  border-color: var(--accent);
+}
+
+.tenant-list {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 10px;
+}
+
+.tenant-card {
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 12px;
+  padding: 10px;
+  background: rgba(255, 255, 255, 0.03);
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.tenant-card:hover {
+  border-color: var(--accent-2);
+}
+
+.tenant-card.active {
+  border-color: var(--accent-2);
+  box-shadow: inset 0 0 0 1px rgba(46, 196, 182, 0.55);
+}
+
+.tenant-unit {
+  font-size: 12px;
+  color: #a8b4d8;
+  margin-bottom: 4px;
+}
+
+.tenant-name {
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.detail-empty {
+  color: var(--muted);
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.detail {
+  display: grid;
+  gap: 10px;
+}
+
+.detail h3 {
+  margin: 0;
+  font-size: 20px;
+}
+
+.meta {
+  display: grid;
+  gap: 6px;
+  font-size: 14px;
+  color: var(--muted);
+}
+
+.tag {
+  display: inline-flex;
+  align-items: center;
+  border-radius: 999px;
+  border: 1px solid rgba(255, 159, 28, 0.5);
+  padding: 4px 10px;
+  width: fit-content;
+  font-size: 12px;
+  color: #ffd49a;
+}
+
+.desc {
+  font-size: 14px;
+  color: #dfe5fa;
+  line-height: 1.6;
+}
+
+.source-image img {
+  width: 100%;
+  border-radius: 10px;
+  border: 1px solid var(--line);
+}
+
+@media (max-width: 1100px) {
+  .layout {
+    grid-template-columns: 1fr;
+  }
+
+  .floor-nav {
+    grid-template-columns: repeat(6, minmax(0, 1fr));
+  }
+
+  .tenant-list {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 760px) {
+  .floor-nav {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+
+  .tenant-list {
+    grid-template-columns: 1fr;
+  }
+}

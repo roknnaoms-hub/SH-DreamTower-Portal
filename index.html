@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SH드림타워 층별 입주기업 포털 시안</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="shell">
+      <header class="hero">
+        <div>
+          <p class="eyebrow">SH DREAMTOWER</p>
+          <h1>층별 입주기업 정보 포털 시안</h1>
+          <p class="subtitle">
+            층을 선택하고 입주기업을 클릭하면 세부 정보가 즉시 표시됩니다.
+          </p>
+        </div>
+      </header>
+
+      <section class="layout">
+        <aside class="panel floors-panel" aria-label="층 선택">
+          <div class="panel-title">층 선택</div>
+          <nav id="floorNav" class="floor-nav"></nav>
+        </aside>
+
+        <section class="panel tenants-panel" aria-label="입주기업 목록">
+          <div class="panel-title-row">
+            <div class="panel-title">입주기업 목록</div>
+            <div id="selectedFloor" class="chip"></div>
+          </div>
+          <div id="tenantList" class="tenant-list"></div>
+        </section>
+
+        <aside class="panel detail-panel" aria-label="기업 상세정보">
+          <div class="panel-title">기업 상세정보</div>
+          <div id="tenantDetail" class="detail-empty">
+            기업 카드를 선택하면 상세 정보가 표시됩니다.
+          </div>
+        </aside>
+      </section>
+
+      <section class="source-image panel">
+        <div class="panel-title">현장 안내판 이미지</div>
+        <img src="sh_dreamtower2.jpg" alt="SH드림타워 층별 안내판" />
+      </section>
+    </main>
+
+    <script src="app.js"></script>
+  </body>
+</html>

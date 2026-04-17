@@ -1,0 +1,3 @@
+id,floorCode,unit,name,category,phone,email,website,description,status
+14F-1402,14F,1402,샘플기업A,IT 서비스,02-1111-2222,hello@samplea.kr,https://samplea.kr,샘플 설명,active
+10F-1009,10F,1009,샘플기업B,제조,02-3333-4444,ops@sampleb.kr,https://sampleb.kr,샘플 설명,active
