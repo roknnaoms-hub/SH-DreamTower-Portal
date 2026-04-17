@@ -10,8 +10,41 @@ const ADMIN_SESSION_KEY = "shdt_admin_authed";
 const ADMIN_PASSWORD = import.meta.env.VITE_ADMIN_PASSWORD || "Dream@12";
 const EIGHT_WITH_SPECIAL = /^(?=.*[^A-Za-z0-9]).{8}$/;
 
+function compareFloors(a, b) {
+  const parse = (value) => {
+    const basementMatch = value.match(/^B(\d+)F$/i);
+    if (basementMatch) {
+      return -Number(basementMatch[1]);
+    }
+
+    const floorMatch = value.match(/^(\d+)F$/i);
+    if (floorMatch) {
+      return Number(floorMatch[1]);
+    }
+
+    return -999;
+  };
+
+  return parse(b) - parse(a);
+}
+
+function buildFloorsFromTenants(tenantList) {
+  const floorMap = new Map();
+  tenantList.forEach((tenant) => {
+    floorMap.set(tenant.floorCode, (floorMap.get(tenant.floorCode) || 0) + 1);
+  });
+
+  return Array.from(floorMap.entries())
+    .map(([floorCode, tenantCount]) => ({ floorCode, tenantCount }))
+    .sort((a, b) => compareFloors(a.floorCode, b.floorCode));
+}
+
 function PortalPage() {
+  const [dataMode, setDataMode] = useState(
+    window.location.hostname.endsWith("github.io") ? "static" : "api"
+  );
   const [floors, setFloors] = useState([]);
+  const [allTenants, setAllTenants] = useState([]);
   const [selectedFloor, setSelectedFloor] = useState("");
   const [tenants, setTenants] = useState([]);
   const [selectedTenant, setSelectedTenant] = useState(null);
@@ -28,7 +61,7 @@ function PortalPage() {
       return;
     }
     fetchTenantsByFloor(selectedFloor);
-  }, [selectedFloor]);
+  }, [selectedFloor, dataMode, allTenants]);
 
   const selectedFloorLabel = useMemo(() => {
     if (!selectedFloor) {
@@ -37,7 +70,32 @@ function PortalPage() {
     return `${selectedFloor} 선택됨`;
   }, [selectedFloor]);
 
+  async function loadStaticTenants() {
+    const response = await fetch(`${import.meta.env.BASE_URL}data/tenants.json`);
+    if (!response.ok) {
+      throw new Error(`정적 데이터 로드 실패(${response.status})`);
+    }
+    const data = await response.json();
+    return data.tenants || [];
+  }
+
   async function fetchFloors() {
+    if (dataMode === "static") {
+      try {
+        const staticTenants = await loadStaticTenants();
+        const nextFloors = buildFloorsFromTenants(staticTenants);
+        setAllTenants(staticTenants);
+        setFloors(nextFloors);
+        if (nextFloors.length > 0) {
+          setSelectedFloor(nextFloors[0].floorCode);
+        }
+        setMessage("배포 환경에서는 정적 데이터 모드로 표시됩니다.");
+      } catch (error) {
+        setMessage(`정적 데이터 조회 실패: ${error.message}`);
+      }
+      return;
+    }
+
     try {
       const { data } = await api.get("/api/floors");
       const nextFloors = data.floors || [];
@@ -45,12 +103,34 @@ function PortalPage() {
       if (nextFloors.length > 0) {
         setSelectedFloor(nextFloors[0].floorCode);
       }
+      setMessage("");
     } catch (error) {
-      setMessage(`층 정보 조회 실패: ${error.message}`);
+      try {
+        const staticTenants = await loadStaticTenants();
+        const nextFloors = buildFloorsFromTenants(staticTenants);
+        setDataMode("static");
+        setAllTenants(staticTenants);
+        setFloors(nextFloors);
+        if (nextFloors.length > 0) {
+          setSelectedFloor(nextFloors[0].floorCode);
+        }
+        setMessage("API 연결이 없어 정적 데이터 모드로 전환되었습니다.");
+      } catch (fallbackError) {
+        setMessage(`층 정보 조회 실패: ${fallbackError.message}`);
+      }
     }
   }
 
   async function fetchTenantsByFloor(floorCode) {
+    if (dataMode === "static") {
+      const filtered = allTenants
+        .filter((tenant) => tenant.floorCode === floorCode)
+        .sort((a, b) => String(a.unit).localeCompare(String(b.unit)));
+      setTenants(filtered);
+      setSelectedTenant(null);
+      return;
+    }
+
     try {
       const { data } = await api.get(`/api/floors/${floorCode}/tenants`);
       setTenants(data.tenants || []);
@@ -64,6 +144,18 @@ function PortalPage() {
     event.preventDefault();
     if (!keyword.trim()) {
       setSearchResult([]);
+      return;
+    }
+
+    if (dataMode === "static") {
+      const normalized = keyword.trim().toLowerCase();
+      const filtered = allTenants.filter((tenant) => {
+        return [tenant.name, tenant.unit, tenant.floorCode, tenant.description]
+          .join(" ")
+          .toLowerCase()
+          .includes(normalized);
+      });
+      setSearchResult(filtered);
       return;
     }
 
