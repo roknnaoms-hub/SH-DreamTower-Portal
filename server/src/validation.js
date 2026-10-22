@@ -1,15 +1,15 @@
 import { z } from "zod";
 
 export const tenantSchema = z.object({
-  id: z.string().min(1),
-  floorCode: z.string().min(1),
-  unit: z.string().min(1),
-  name: z.string().min(1),
+  id: z.string().min(1).max(200),
+  floorCode: z.string().min(1).max(200),
+  unit: z.string().min(1).max(200),
+  name: z.string().min(1).max(200),
   category: z.string().default("미분류"),
-  phone: z.string().default(""),
-  email: z.string().default(""),
-  website: z.string().default(""),
-  description: z.string().default(""),
+  phone: z.string().max(4000).default(""),
+  email: z.string().max(4000).default(""),
+  website: z.string().max(2048).refine(value => !value || /^https?:\/\//i.test(value), "HTTP(S) website required").default(""),
+  description: z.string().max(4000).default(""),
   status: z.enum(["active", "vacant"]).default("active"),
   updatedAt: z.string().optional(),
 });

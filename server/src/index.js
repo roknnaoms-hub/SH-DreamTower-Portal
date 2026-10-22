@@ -1,28 +1,61 @@
 import express from "express";
 import cors from "cors";
 import multer from "multer";
-import XLSX from "xlsx";
-import fs from "fs/promises";
+import { createHash, timingSafeEqual } from "node:crypto";
+import { Worker } from "node:worker_threads";
+import { fileURLToPath } from "node:url";
+import { rateLimit } from "express-rate-limit";
 import path from "path";
 import { readDatabase, writeDatabase } from "./db.js";
 import { normalizeTenant } from "./validation.js";
 
+export function createApp({ tokenHash = process.env.ADMIN_TOKEN_SHA256 || "", origins = process.env.ALLOWED_ORIGINS || "" } = {}) {
 const app = express();
-const PORT = process.env.PORT || 4100;
-const uploadDir = path.resolve(process.cwd(), "uploads");
-
-const storage = multer.diskStorage({
-  destination: (_req, _file, cb) => cb(null, uploadDir),
-  filename: (_req, file, cb) => {
-    const unique = `${Date.now()}-${file.originalname.replace(/\s+/g, "-")}`;
-    cb(null, unique);
+app.disable("x-powered-by");
+// Only a loopback HTTPS reverse proxy may supply X-Forwarded-Proto.
+if (process.env.TRUST_LOOPBACK_PROXY === "true") app.set("trust proxy", "loopback");
+const allowedOrigins = new Set(origins.split(",").map(value => value.trim()).filter(Boolean));
+app.use((_req, res, next) => {
+  res.set({ "X-Content-Type-Options": "nosniff", "Referrer-Policy": "no-referrer", "X-Frame-Options": "DENY", "Content-Security-Policy": "default-src 'none'; frame-ancestors 'none'" });
+  next();
+});
+app.use(cors({
+  origin: (origin, callback) => callback(null, Boolean(origin && allowedOrigins.has(origin))),
+  methods: ["GET", "POST"], allowedHeaders: ["Content-Type", "Authorization"], maxAge: 600,
+}));
+app.use("/api/admin", rateLimit({ windowMs: 60_000, limit: 30, standardHeaders: "draft-8", legacyHeaders: false }));
+app.use("/api/admin", (req, res, next) => {
+  res.set("Cache-Control", "no-store");
+  if (req.headers.origin && !allowedOrigins.has(req.headers.origin)) return res.status(403).json({ message: "허용되지 않은 출처입니다." });
+  if (!/^[a-f0-9]{64}$/i.test(tokenHash)) return res.status(503).json({ message: "관리자 기능이 아직 설정되지 않았습니다." });
+  const supplied = /^Bearer ([A-Za-z0-9_-]{43,128})$/.exec(req.get("Authorization") || "");
+  const actualHash = createHash("sha256").update(supplied?.[1] || "").digest();
+  if (!supplied || !timingSafeEqual(actualHash, Buffer.from(tokenHash, "hex"))) return res.status(401).json({ message: "관리자 인증이 필요합니다." });
+  next();
+});
+app.use(express.json({ limit: "32kb" }));
+const upload = multer({
+  storage: multer.memoryStorage(),
+  limits: { fileSize: 2 * 1024 * 1024, files: 1, fields: 0, parts: 1, headerPairs: 30 },
+  fileFilter: (_req, file, cb) => {
+    if (!/\.(xlsx|xls|csv)$/i.test(file.originalname)) return cb(Object.assign(new Error("Unsupported upload"), { status: 415 }));
+    cb(null, true);
   },
 });
-
-const upload = multer({ storage });
-
-app.use(cors());
-app.use(express.json());
+app.get("/api/admin/session", (_req, res) => res.json({ authenticated: true }));
+let importing = false;
+function parseRows(file) {
+  return new Promise((resolve, reject) => {
+    const worker = new Worker(new URL("./parse-upload.js", import.meta.url), {
+      workerData: { buffer: file.buffer, extension: path.extname(file.originalname).toLowerCase() },
+      resourceLimits: { maxOldGenerationSizeMb: 64, maxYoungGenerationSizeMb: 16 },
+    });
+    const timer = setTimeout(() => { worker.terminate(); reject(Object.assign(new Error("Import timeout"), { status: 422 })); }, 5000);
+    worker.once("message", result => { clearTimeout(timer); worker.terminate(); result.error ? reject(Object.assign(new Error("Invalid spreadsheet"), { status: 422 })) : resolve(result.rows); });
+    worker.once("error", () => { clearTimeout(timer); reject(Object.assign(new Error("Invalid spreadsheet"), { status: 422 })); });
+    worker.once("exit", code => { clearTimeout(timer); if (code !== 0) reject(Object.assign(new Error("Import stopped"), { status: 422 })); });
+  });
+}
 
 function buildFloors(tenants) {
   const floorMap = new Map();
@@ -142,12 +175,12 @@ app.post("/api/admin/tenants/import", upload.single("file"), async (req, res) =>
     return;
   }
 
+  if (importing) return res.status(429).json({ message: "다른 업로드가 진행 중입니다." });
+  importing = true;
+  try {
+  const rows = await parseRows(req.file);
+  if (!rows.length || rows.length > 2000) return res.status(422).json({ message: "1~2,000행만 업로드할 수 있습니다." });
   const data = await readDatabase();
-  const workbook = XLSX.readFile(req.file.path);
-  const firstSheet = workbook.SheetNames[0];
-  const sheet = workbook.Sheets[firstSheet];
-  const rows = XLSX.utils.sheet_to_json(sheet, { defval: "" });
-
   const imported = rows
     .map((row, index) => normalizeTenant(row, index))
     .filter((tenant) => tenant.floorCode && tenant.unit && tenant.name);
@@ -163,20 +196,27 @@ app.post("/api/admin/tenants/import", upload.single("file"), async (req, res) =>
   };
 
   await writeDatabase(nextData);
-  await fs.unlink(req.file.path).catch(() => {});
 
   res.json({
     message: "Import completed",
     importedCount: imported.length,
     totalCount: nextData.tenants.length,
   });
+  } finally { importing = false; }
 });
 
 app.use((error, _req, res, _next) => {
-  console.error(error);
-  res.status(500).json({ message: "Server error", detail: error.message });
+  const status = error instanceof multer.MulterError ? (error.code === "LIMIT_FILE_SIZE" ? 413 : 400)
+    : error.name === "ZodError" ? 422 : (error.status >= 400 && error.status < 500 ? error.status : 500);
+  // Never log request headers, tokens, uploaded rows, or parser error details.
+  console.error(`API request failed (${status})`);
+  res.status(status).json({ message: status === 500 ? "서버 처리 오류입니다." : "입력 형식 또는 허용 크기를 확인하세요." });
 });
+return app;
+}
 
-app.listen(PORT, () => {
-  console.log(`SH Dreamtower API running on http://localhost:${PORT}`);
-});
+if (process.argv[1] && fileURLToPath(import.meta.url) === path.resolve(process.argv[1])) {
+  const port = Number(process.env.PORT || 4100);
+  const host = process.env.HOST || "127.0.0.1";
+  createApp().listen(port, host, () => console.log(`SH Dreamtower API listening on ${host}:${port}`));
+}

@@ -1,14 +1,19 @@
 import { useEffect, useMemo, useState } from "react";
 import axios from "axios";
 
-const api = axios.create({
-  baseURL: import.meta.env.VITE_API_BASE_URL || "http://localhost:4100",
-});
-
+const API_BASE_URL = import.meta.env.VITE_API_BASE_URL || "";
+const api = axios.create({ baseURL: API_BASE_URL || window.location.origin, timeout: 15000 });
 const EMPTY_DETAIL = "층에서 기업을 선택하면 상세정보가 표시됩니다.";
-const ADMIN_SESSION_KEY = "shdt_admin_authed";
-const ADMIN_PASSWORD = import.meta.env.VITE_ADMIN_PASSWORD || "Dream@12";
-const EIGHT_WITH_SPECIAL = /^(?=.*[^A-Za-z0-9]).{8}$/;
+function adminApiReady() {
+  if (!API_BASE_URL) return false;
+  try {
+    const url = new URL(API_BASE_URL);
+    return url.protocol === "https:" || (import.meta.env.DEV && ["localhost", "127.0.0.1", "[::1]"].includes(url.hostname));
+  } catch { return false; }
+}
+function safeWebsite(value) {
+  return /^https?:\/\//i.test(value || "") ? value : "";
+}
 const SMAP_BASE_URL = import.meta.env.VITE_SMAP_URL || "https://smap.seoul.go.kr/";
 const BUILDING_LAT = Number(import.meta.env.VITE_BUILDING_LAT || 37.4796);
 const BUILDING_LNG = Number(import.meta.env.VITE_BUILDING_LNG || 126.8844);
@@ -60,7 +65,7 @@ function buildFloorsFromTenants(tenantList) {
 
 function PortalPage() {
   const [dataMode, setDataMode] = useState(
-    window.location.hostname.endsWith("github.io") ? "static" : "api"
+    !API_BASE_URL ? "static" : "api"
   );
   const [floors, setFloors] = useState([]);
   const [allTenants, setAllTenants] = useState([]);
@@ -200,7 +205,7 @@ function PortalPage() {
           <a className="nav-link" href={buildSMapLink()} target="_blank" rel="noreferrer">
             S-MAP 바로가기
           </a>
-          <a className="nav-link" href="/admin">
+          <a className="nav-link" href={`${import.meta.env.BASE_URL}?admin=1`}>
             관리자 이동
           </a>
         </div>
@@ -210,7 +215,7 @@ function PortalPage() {
 
       <section className="model-wrap panel">
         <div className="panel-title">건물 모델링 이미지</div>
-        <img src="/SHDREAMTOWER.png" alt="SH드림타워 건물 모델링" className="model-image" />
+        <img src={`${import.meta.env.BASE_URL}SHDREAMTOWER.png`} alt="SH드림타워 건물 모델링" className="model-image" />
       </section>
 
       <section className="layout">
@@ -274,7 +279,7 @@ function PortalPage() {
                 <div>이메일: {selectedTenant.email || "-"}</div>
                 <div>좌표: {BUILDING_LAT}, {BUILDING_LNG}</div>
                 <div>
-                  웹사이트: {selectedTenant.website ? <a href={selectedTenant.website}>{selectedTenant.website}</a> : "-"}
+                  웹사이트: {safeWebsite(selectedTenant.website) ? <a href={safeWebsite(selectedTenant.website)}>{selectedTenant.website}</a> : "-"}
                 </div>
               </div>
               <p className="desc">{selectedTenant.description || "상세 설명이 없습니다."}</p>
@@ -295,32 +300,24 @@ function AdminPage() {
   const [loading, setLoading] = useState(false);
   const [password, setPassword] = useState("");
   const [authError, setAuthError] = useState("");
-  const [isAuthed, setIsAuthed] = useState(() => {
-    return window.sessionStorage.getItem(ADMIN_SESSION_KEY) === "1";
-  });
+  const [isAuthed, setIsAuthed] = useState(false);
+  const [token, setToken] = useState("");
 
-  function handleLogin(event) {
+  async function handleLogin(event) {
     event.preventDefault();
     setAuthError("");
-
-    if (!EIGHT_WITH_SPECIAL.test(password)) {
-      setAuthError("비밀번호 형식 오류: 특수기호 포함 정확히 8자리여야 합니다.");
-      return;
-    }
-
-    if (password !== ADMIN_PASSWORD) {
-      setAuthError("비밀번호가 일치하지 않습니다.");
-      return;
-    }
-
-    window.sessionStorage.setItem(ADMIN_SESSION_KEY, "1");
-    setIsAuthed(true);
-    setPassword("");
-    setMessage("관리자 인증이 완료되었습니다.");
+    if (!adminApiReady()) { setAuthError("관리자 서버가 설정되지 않았습니다. 공개 안내는 계속 이용하실 수 있습니다."); return; }
+    try {
+      await api.get("/api/admin/session", { headers: { Authorization: `Bearer ${password}` } });
+      setToken(password);
+      setPassword("");
+      setIsAuthed(true);
+      setMessage("관리자 인증이 완료되었습니다.");
+    } catch { setAuthError("관리자 인증에 실패했습니다. 키와 서버 설정을 확인하세요."); }
   }
 
   function handleLogout() {
-    window.sessionStorage.removeItem(ADMIN_SESSION_KEY);
+    setToken("");
     setIsAuthed(false);
     setUploadFile(null);
     setPassword("");
@@ -334,6 +331,7 @@ function AdminPage() {
       return;
     }
 
+    if (uploadFile.size > 2 * 1024 * 1024) { setMessage("2MB 이하의 파일만 업로드할 수 있습니다."); return; }
     const form = new FormData();
     form.append("file", uploadFile);
 
@@ -341,7 +339,7 @@ function AdminPage() {
       setLoading(true);
       const { data } = await api.post("/api/admin/tenants/import", form, {
         headers: {
-          "Content-Type": "multipart/form-data",
+          Authorization: `Bearer ${token}`,
         },
       });
       setMessage(`업로드 완료: ${data.importedCount}건 반영, 총 ${data.totalCount}건`);
@@ -367,7 +365,7 @@ function AdminPage() {
               로그아웃
             </button>
           ) : null}
-          <a className="nav-link" href="/">
+          <a className="nav-link" href={import.meta.env.BASE_URL}>
             포털 이동
           </a>
         </div>
@@ -378,14 +376,15 @@ function AdminPage() {
       {!isAuthed ? (
         <section className="panel admin-panel">
           <div className="panel-title">관리자 로그인</div>
-          <p className="admin-desc">비밀번호는 특수기호 포함 8자리입니다.</p>
+          <p className="admin-desc">서버에서 발급한 관리자 키로 로그인합니다. 키는 이 창을 닫으면 삭제됩니다.</p>
 
           <form className="admin-form" onSubmit={handleLogin}>
             <input
               type="password"
               value={password}
               onChange={(event) => setPassword(event.target.value)}
-              placeholder="관리자 비밀번호"
+              placeholder="관리자 키"
+              autoComplete="off"
             />
             <button type="submit">로그인</button>
           </form>
@@ -396,7 +395,7 @@ function AdminPage() {
         <section className="panel admin-panel">
           <div className="panel-title">데이터 업로드</div>
           <p className="admin-desc">
-            첫 시트 컬럼: floorCode, unit, name, category, phone, email, website, description, status
+            최대 2MB / 2,000행. 첫 시트 컬럼: floorCode, unit, name, category, phone, email, website, description, status
           </p>
 
           <form className="admin-form" onSubmit={handleUpload}>
@@ -416,7 +415,7 @@ function AdminPage() {
 }
 
 function App() {
-  const isAdmin = window.location.pathname.startsWith("/admin");
+  const isAdmin = new URLSearchParams(window.location.search).get("admin") === "1" || window.location.pathname.endsWith("/admin");
   return isAdmin ? <AdminPage /> : <PortalPage />;
 }
 
