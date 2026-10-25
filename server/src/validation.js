@@ -10,7 +10,7 @@ export const tenantSchema = z.object({
   email: z.string().max(4000).default(""),
   website: z.string().max(2048).refine(value => !value || /^https?:\/\//i.test(value), "HTTP(S) website required").default(""),
   description: z.string().max(4000).default(""),
-  status: z.enum(["active", "vacant"]).default("active"),
+  status: z.enum(["active", "vacant", "unknown"]).default("active"),
   updatedAt: z.string().optional(),
 });
 
@@ -31,3 +31,4 @@ export function normalizeTenant(row, index) {
     updatedAt: new Date().toISOString(),
   });
 }
+

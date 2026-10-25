@@ -74,6 +74,8 @@ function PortalPage() {
   const [selectedTenant, setSelectedTenant] = useState(null);
   const [keyword, setKeyword] = useState("");
   const [searchResult, setSearchResult] = useState([]);
+  const [searchedKeyword, setSearchedKeyword] = useState("");
+  const [sourceInfo, setSourceInfo] = useState(null);
   const [message, setMessage] = useState("");
 
   useEffect(() => {
@@ -100,6 +102,7 @@ function PortalPage() {
       throw new Error(`정적 데이터 로드 실패(${response.status})`);
     }
     const data = await response.json();
+    setSourceInfo(data);
     return data.tenants || [];
   }
 
@@ -113,7 +116,7 @@ function PortalPage() {
         if (nextFloors.length > 0) {
           setSelectedFloor(nextFloors[0].floorCode);
         }
-        setMessage("배포 환경에서는 정적 데이터 모드로 표시됩니다.");
+        setMessage("");
       } catch (error) {
         setMessage(`정적 데이터 조회 실패: ${error.message}`);
       }
@@ -122,6 +125,7 @@ function PortalPage() {
 
     try {
       const { data } = await api.get("/api/floors");
+      setSourceInfo(data);
       const nextFloors = data.floors || [];
       setFloors(nextFloors);
       if (nextFloors.length > 0) {
@@ -138,7 +142,7 @@ function PortalPage() {
         if (nextFloors.length > 0) {
           setSelectedFloor(nextFloors[0].floorCode);
         }
-        setMessage("API 연결이 없어 정적 데이터 모드로 전환되었습니다.");
+        setMessage("최근 저장된 입주사 안내를 표시합니다.");
       } catch (fallbackError) {
         setMessage(`층 정보 조회 실패: ${fallbackError.message}`);
       }
@@ -168,6 +172,7 @@ function PortalPage() {
     event.preventDefault();
     if (!keyword.trim()) {
       setSearchResult([]);
+      setSearchedKeyword("");
       return;
     }
 
@@ -180,6 +185,8 @@ function PortalPage() {
           .includes(normalized);
       });
       setSearchResult(filtered);
+      setSearchedKeyword(keyword.trim());
+      setSelectedTenant(null);
       return;
     }
 
@@ -188,6 +195,8 @@ function PortalPage() {
         params: { keyword: keyword.trim() },
       });
       setSearchResult(data.tenants || []);
+      setSearchedKeyword(keyword.trim());
+      setSelectedTenant(null);
     } catch (error) {
       setMessage(`검색 실패: ${error.message}`);
     }
@@ -213,6 +222,15 @@ function PortalPage() {
 
       {message ? <div className="message">{message}</div> : null}
 
+      {sourceInfo?.updatedAt ? (
+        <section className="panel source-note" aria-label="입주사 정보 출처">
+          <strong>입주사 안내 · {sourceInfo.updatedAt.slice(0, 10)} 반영</strong>
+          <p>{sourceInfo.source || "입주사 안내 자료"}</p>
+          <p>{sourceInfo.sourceNote || "동일 기업의 복수 호실은 각각 표시합니다."}</p>
+          <p>안내판 미표기 호실은 공실 여부가 확인되지 않은 곳입니다.</p>
+        </section>
+      ) : null}
+
       <section className="model-wrap panel">
         <div className="panel-title">건물 모델링 이미지</div>
         <img src={`${import.meta.env.BASE_URL}SHDREAMTOWER.png`} alt="SH드림타워 건물 모델링" className="model-image" />
@@ -226,10 +244,16 @@ function PortalPage() {
               <button
                 key={floor.floorCode}
                 className={`floor-btn ${selectedFloor === floor.floorCode ? "active" : ""}`}
-                onClick={() => setSelectedFloor(floor.floorCode)}
+                onClick={() => {
+                  setSelectedFloor(floor.floorCode);
+                  setKeyword("");
+                  setSearchedKeyword("");
+                  setSearchResult([]);
+                  setSelectedTenant(null);
+                }}
               >
                 <span>{floor.floorCode}</span>
-                <small>{floor.tenantCount}개사</small>
+                <small>{floor.tenantCount}개 항목</small>
               </button>
             ))}
           </nav>
@@ -238,7 +262,7 @@ function PortalPage() {
         <section className="panel tenants-panel">
           <div className="panel-title-row">
             <div className="panel-title">입주기업 목록</div>
-            <div className="chip">{selectedFloorLabel}</div>
+            <div className="chip">{searchedKeyword ? "전체 층 검색" : selectedFloorLabel}</div>
           </div>
 
           <form className="search-row" onSubmit={handleSearch}>
@@ -246,20 +270,32 @@ function PortalPage() {
               value={keyword}
               onChange={(event) => setKeyword(event.target.value)}
               placeholder="기업명/호실 검색"
+              aria-label="기업명 또는 호실 검색"
             />
             <button type="submit">검색</button>
           </form>
 
+          {searchedKeyword ? <p className="search-summary" role="status">“{searchedKeyword}” 검색 결과 {searchResult.length}건</p> : null}
+          {searchedKeyword && searchResult.length === 0 ? <p className="detail-empty">일치하는 기업 또는 호실이 없습니다.</p> : null}
           <div className="tenant-list">
-            {(searchResult.length > 0 ? searchResult : tenants).map((tenant) => (
+            {(searchedKeyword ? searchResult : tenants).map((tenant) => (
               <article
                 key={tenant.id}
                 className={`tenant-card ${selectedTenant?.id === tenant.id ? "active" : ""}`}
                 onClick={() => setSelectedTenant(tenant)}
+                role="button"
+                tabIndex={0}
+                onKeyDown={(event) => {
+                  if (event.key === "Enter" || event.key === " ") {
+                    event.preventDefault();
+                    setSelectedTenant(tenant);
+                  }
+                }}
               >
                 <div className="tenant-unit">{tenant.floorCode} / {tenant.unit}</div>
                 <div className="tenant-name">{tenant.name}</div>
                 <div className="tenant-category">{tenant.category}</div>
+                {tenant.transcriptionNote ? <div className="transcription-note">상호명 판독 확인 필요</div> : null}
               </article>
             ))}
           </div>
@@ -283,6 +319,7 @@ function PortalPage() {
                 </div>
               </div>
               <p className="desc">{selectedTenant.description || "상세 설명이 없습니다."}</p>
+              {selectedTenant.transcriptionNote ? <p className="transcription-note">{selectedTenant.transcriptionNote}</p> : null}
               <a className="map-link" href={buildSMapLink()} target="_blank" rel="noreferrer">
                 S-MAP에서 건물 위치 보기
               </a>
@@ -290,6 +327,13 @@ function PortalPage() {
           )}
         </aside>
       </section>
+      {sourceInfo?.sourceImage === "data/tenant-board-2026-10-25.jpg" ? (
+        <details className="panel source-board">
+          <summary>입주사 안내판 원본 보기</summary>
+          <a href={`${import.meta.env.BASE_URL}${sourceInfo.sourceImage}`} target="_blank" rel="noreferrer">원본 크게 보기</a>
+          <img src={`${import.meta.env.BASE_URL}${sourceInfo.sourceImage}`} alt="2026년 10월 25일 제공된 SH드림타워 입주사 안내판. 촬영일 미상." loading="lazy" />
+        </details>
+      ) : null}
     </main>
   );
 }
@@ -420,3 +464,4 @@ function App() {
 }
 
 export default App;
+

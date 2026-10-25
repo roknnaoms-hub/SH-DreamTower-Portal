@@ -101,6 +101,9 @@ app.get("/api/floors", async (_req, res) => {
   res.json({
     buildingName: data.buildingName,
     updatedAt: data.updatedAt,
+    source: data.source,
+    sourceImage: data.sourceImage,
+    sourceNote: data.sourceNote,
     floors,
   });
 });
@@ -220,3 +223,4 @@ if (process.argv[1] && fileURLToPath(import.meta.url) === path.resolve(process.a
   const host = process.env.HOST || "127.0.0.1";
   createApp().listen(port, host, () => console.log(`SH Dreamtower API listening on ${host}:${port}`));
 }
+

@@ -345,3 +345,17 @@ button.nav-link {
     grid-template-columns: 1fr;
   }
 }
+
+
+.source-note {
+  color: var(--muted);
+  line-height: 1.65;
+}
+.source-note strong { color: var(--text); }
+.source-note p { margin: 4px 0 0; }
+.search-summary { color: var(--muted); }
+.transcription-note { color: #ffd39b; font-size: 13px; line-height: 1.6; }
+.tenant-card:focus-visible { outline: 2px solid var(--accent2); outline-offset: 2px; }
+.source-board summary { cursor: pointer; font-weight: 700; }
+.source-board a { display: block; margin: 14px 0; color: #8bd6ff; }
+.source-board img { display: block; width: min(100%, 871px); height: auto; margin: 0 auto; border-radius: 8px; }
