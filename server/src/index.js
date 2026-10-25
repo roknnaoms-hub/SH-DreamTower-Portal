@@ -104,6 +104,9 @@ app.get("/api/floors", async (_req, res) => {
     source: data.source,
     sourceImage: data.sourceImage,
     sourceNote: data.sourceNote,
+    boardUpdatedAt: data.boardUpdatedAt,
+    industryUpdatedAt: data.industryUpdatedAt,
+    industrySummary: data.industrySummary,
     floors,
   });
 });
@@ -128,7 +131,7 @@ app.get("/api/tenants", async (req, res) => {
 
   if (keyword) {
     tenants = tenants.filter((tenant) => {
-      return [tenant.name, tenant.unit, tenant.floorCode, tenant.description]
+      return [tenant.name, tenant.unit, tenant.floorCode, tenant.category, tenant.industry?.industryDetail, tenant.description, ...(tenant.aliases || [])]
         .join(" ")
         .toLowerCase()
         .includes(keyword);

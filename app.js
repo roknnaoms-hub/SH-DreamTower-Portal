@@ -4,6 +4,18 @@ function escapeHtml(value) {
 function websiteLink(value) {
   return /^https?:\/\//i.test(value || "") ? `<a href="${escapeHtml(value)}" target="_blank" rel="noreferrer">${escapeHtml(value)}</a>` : "-";
 }
+function industryHtml(industry) {
+  if (!industry) return "";
+  const status = industry.status === "verified" ? "업종 확인" : "확인 근거 부족";
+  const sources = (industry.sources || []).filter(source => /^https?:\/\//i.test(source.url || ""));
+  return `<section aria-label="업종 확인 근거">
+    <h4>공개자료 기준 업종</h4>
+    <p>${status} · ${escapeHtml(industry.reviewedAt)}</p>
+    <p>${escapeHtml(industry.industryDetail)}</p>
+    ${industry.note ? `<p>${escapeHtml(industry.note)}</p>` : ""}
+    <ul>${sources.map(source => `<li><a href="${escapeHtml(source.url)}" target="_blank" rel="noreferrer">${escapeHtml(source.title || "업종 확인 자료")}</a><p>${escapeHtml(source.evidence)}</p></li>`).join("")}</ul>
+  </section>`;
+}
 const floorNav = document.getElementById("floorNav");
 const selectedFloorEl = document.getElementById("selectedFloor");
 const tenantListEl = document.getElementById("tenantList");
@@ -48,6 +60,7 @@ function createTenantCards() {
     card.innerHTML = `
       <div class="tenant-unit">${escapeHtml(tenant.unit)}</div>
       <div class="tenant-name">${escapeHtml(tenant.name)}</div>
+      <div class="tenant-category">${escapeHtml(tenant.category)}</div>
     `;
 
     card.addEventListener("click", () => {
@@ -77,6 +90,7 @@ function createTenantDetail() {
       <div>웹사이트: ${websiteLink(selectedTenant.website)}</div>
     </div>
     <p class="desc">${escapeHtml([selectedTenant.description, selectedTenant.transcriptionNote].filter(Boolean).join(" "))}</p>
+    ${industryHtml(selectedTenant.industry)}
   `;
 }
 
@@ -99,7 +113,7 @@ async function loadDirectory() {
     });
     buildingData = Array.from(byFloor, ([floor, tenants]) => ({ floor, tenants }));
     selectedFloor = buildingData[0];
-    document.querySelector(".subtitle").textContent = `${data.updatedAt} 반영 · 제공된 입주사 안내판 기준 · 미표기는 공실을 뜻하지 않습니다.`;
+    document.querySelector(".subtitle").textContent = `입주사 안내판 ${data.boardUpdatedAt || data.updatedAt} 반영${data.industryUpdatedAt ? ` · 업종 ${data.industryUpdatedAt} 인터넷 조사` : ""} · 미표기는 공실을 뜻하지 않습니다.`;
     if (selectedFloor) render();
   } catch (error) {
     tenantListEl.textContent = error.message;

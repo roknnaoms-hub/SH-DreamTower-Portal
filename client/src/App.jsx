@@ -14,6 +14,34 @@ function adminApiReady() {
 function safeWebsite(value) {
   return /^https?:\/\//i.test(value || "") ? value : "";
 }
+
+function IndustryDetails({ industry }) {
+  if (!industry) return null;
+  const verified = industry.status === "verified";
+  const sources = (industry.sources || []).filter((source) => safeWebsite(source.url));
+  return (
+    <section className="industry-evidence" aria-label="업종 확인 근거">
+      <h4>공개자료 기준 업종</h4>
+      <p className={`industry-status ${verified ? "verified" : "unverified"}`}>
+        {verified ? (industry.sourceType === "official" ? "공식자료 확인" : "공개 기업정보 확인") : "확인 근거 부족"}
+        {industry.reviewedAt ? ` · ${industry.reviewedAt}` : ""}
+      </p>
+      {industry.industryDetail ? <p>{industry.industryDetail}</p> : null}
+      {industry.note ? <p className="industry-note">{industry.note}</p> : null}
+      {sources.length ? (
+        <ul className="industry-sources">
+          {sources.map((source) => (
+            <li key={source.url}>
+              <a href={source.url} target="_blank" rel="noreferrer">{source.title || "업종 확인 자료"}</a>
+              {source.evidence ? <p>{source.evidence}</p> : null}
+            </li>
+          ))}
+        </ul>
+      ) : null}
+      {industry.matchBasis ? <p className="industry-match">대조 기준: {industry.matchBasis}</p> : null}
+    </section>
+  );
+}
 const SMAP_BASE_URL = import.meta.env.VITE_SMAP_URL || "https://smap.seoul.go.kr/";
 const BUILDING_LAT = Number(import.meta.env.VITE_BUILDING_LAT || 37.4796);
 const BUILDING_LNG = Number(import.meta.env.VITE_BUILDING_LNG || 126.8844);
@@ -179,7 +207,7 @@ function PortalPage() {
     if (dataMode === "static") {
       const normalized = keyword.trim().toLowerCase();
       const filtered = allTenants.filter((tenant) => {
-        return [tenant.name, tenant.unit, tenant.floorCode, tenant.description]
+        return [tenant.name, tenant.unit, tenant.floorCode, tenant.category, tenant.industry?.industryDetail, tenant.description, ...(tenant.aliases || [])]
           .join(" ")
           .toLowerCase()
           .includes(normalized);
@@ -224,10 +252,17 @@ function PortalPage() {
 
       {sourceInfo?.updatedAt ? (
         <section className="panel source-note" aria-label="입주사 정보 출처">
-          <strong>입주사 안내 · {sourceInfo.updatedAt.slice(0, 10)} 반영</strong>
+          <strong>입주사 안내 · {(sourceInfo.boardUpdatedAt || sourceInfo.updatedAt).slice(0, 10)} 반영</strong>
           <p>{sourceInfo.source || "입주사 안내 자료"}</p>
           <p>{sourceInfo.sourceNote || "동일 기업의 복수 호실은 각각 표시합니다."}</p>
           <p>안내판 미표기 호실은 공실 여부가 확인되지 않은 곳입니다.</p>
+          {sourceInfo.industrySummary ? (
+            <div className="industry-summary">
+              <strong>입주업종 · {sourceInfo.industryUpdatedAt} 인터넷 조사</strong>
+              <p>상호 기준 {sourceInfo.industrySummary.reviewedCompanies}개 조사 · 업종 확인 {sourceInfo.industrySummary.verifiedCompanies}개 · 미확인 {sourceInfo.industrySummary.unverifiedCompanies}개</p>
+              <p>기업을 선택하면 사업분야와 확인 출처를 볼 수 있습니다. 업종으로도 검색할 수 있습니다.</p>
+            </div>
+          ) : null}
         </section>
       ) : null}
 
@@ -269,14 +304,14 @@ function PortalPage() {
             <input
               value={keyword}
               onChange={(event) => setKeyword(event.target.value)}
-              placeholder="기업명/호실 검색"
-              aria-label="기업명 또는 호실 검색"
+              placeholder="기업명 / 호실 / 업종 검색"
+              aria-label="기업명, 호실 또는 업종 검색"
             />
             <button type="submit">검색</button>
           </form>
 
           {searchedKeyword ? <p className="search-summary" role="status">“{searchedKeyword}” 검색 결과 {searchResult.length}건</p> : null}
-          {searchedKeyword && searchResult.length === 0 ? <p className="detail-empty">일치하는 기업 또는 호실이 없습니다.</p> : null}
+          {searchedKeyword && searchResult.length === 0 ? <p className="detail-empty">일치하는 기업·호실·업종이 없습니다.</p> : null}
           <div className="tenant-list">
             {(searchedKeyword ? searchResult : tenants).map((tenant) => (
               <article
@@ -319,6 +354,7 @@ function PortalPage() {
                 </div>
               </div>
               <p className="desc">{selectedTenant.description || "상세 설명이 없습니다."}</p>
+              <IndustryDetails industry={selectedTenant.industry} />
               {selectedTenant.transcriptionNote ? <p className="transcription-note">{selectedTenant.transcriptionNote}</p> : null}
               <a className="map-link" href={buildSMapLink()} target="_blank" rel="noreferrer">
                 S-MAP에서 건물 위치 보기

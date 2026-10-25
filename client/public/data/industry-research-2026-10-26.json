@@ -1,0 +1,2620 @@
+{
+  "reviewedAt": "2026-10-26",
+  "building": "SH드림타워",
+  "address": "서울 금천구 가산디지털1로 205-15",
+  "method": "공식 홈페이지 우선, 공개 기업정보 보완. 건물·호실·사업내용을 대조하며 상호명만으로 업종을 추정하지 않음. 업종 미확인의 후보 정보는 확정된 사실이 아님.",
+  "summary": {
+    "reviewedCompanies": 133,
+    "verifiedCompanies": 103,
+    "unverifiedCompanies": 30,
+    "verifiedListings": 135,
+    "unverifiedListings": 36,
+    "officialSources": 49,
+    "businessDirectorySources": 54
+  },
+  "corrections": {
+    "(주)코비즈워드": {
+      "name": "(주)코비즈위드",
+      "reason": "607·608호의 사업자정보 및 안내판 확대 대조로 상호 표기를 코비즈위드로 정정했습니다.",
+      "source": "https://moneypin.biz/bizno/detail/2728103765/"
+    },
+    "이움미디어(주)": {
+      "name": "이음미디어(주)",
+      "reason": "공식 홈페이지의 SH드림타워 513호 쇼룸 표기와 대조하여 이음미디어로 정정했습니다.",
+      "source": "https://leum.kr/"
+    },
+    "뉴엘텍스": {
+      "name": "뉴엘택스",
+      "reason": "동일 건물 313호의 기업정보·채용공고에 따라 뉴엘택스로 상호 표기를 정정했습니다.",
+      "source": "https://www.jobkorea.co.kr/Recruit/GI_Read/50105819"
+    },
+    "브루잉커피 SH드림타워점": {
+      "name": "브루인커피 SH드림타워점",
+      "reason": "동일 건물의 매장 주문 페이지와 대조하여 브루인커피로 상호 표기를 정정했습니다.",
+      "source": "https://app.passorder.co.kr/normal/cac0a922-17bf-4ff0-b3f8-8ac9ed503738"
+    },
+    "(주)이루디자인": {
+      "name": "(주)이투디자인",
+      "reason": "안내판 확대 및 동일 506호 기업정보를 대조하여 이투디자인으로 정정했습니다.",
+      "source": "https://www.saramin.co.kr/zf_user/company-info/view/csn/ZHhZa0pTQVJTcTVySXllTU1oZnU1dz09/company_nm/%28%EC%A3%BC%29%EC%9D%B4%ED%88%AC%EB%94%94%EC%9E%90%EC%9D%B8"
+    },
+    "(주)더봄시스템": {
+      "name": "(주)더불시스템",
+      "reason": "안내판 확대 및 동일 512호 공장정보를 대조하여 더불시스템으로 정정했습니다.",
+      "source": "https://ifactoryhub.com/%EC%84%9C%EC%9A%B8%EC%8B%9C-%EC%A1%B0%EB%AA%85%EA%B3%B5%EC%9E%A5-%EB%A6%AC%EC%8A%A4%ED%8A%B8/"
+    },
+    "(주)펫토웍스": {
+      "name": "(주)페토웍스",
+      "reason": "안내판 확대 및 동일 614호 공식·기업정보를 대조하여 페토웍스로 정정했습니다.",
+      "source": "https://peto.works/contact"
+    }
+  },
+  "companies": [
+    {
+      "index": 0,
+      "name": "성호전자(주)",
+      "category": "전자부품·전원장치 제조",
+      "industryDetail": "필름콘덴서, 전원공급장치(SMPS) 및 관련 제조설비를 생산합니다.",
+      "status": "verified",
+      "sourceType": "business_directory",
+      "sources": [
+        {
+          "url": "https://www.saramin.co.kr/zf_user/company-info/view/csn/OVgzQ2NMQnNtR2x0S2M2UTZEcC9mQT09/company_nm/%EC%84%B1%ED%98%B8%EC%A0%84%EC%9E%90%28%EC%A3%BC%29",
+          "title": "사람인 성호전자 기업정보",
+          "evidence": "전자부품·기계장비 제조와 SH드림타워 1301·1302·1401호 주소가 함께 제시됩니다."
+        }
+      ],
+      "matchBasis": "상호와 가산디지털1로 205-15, 13·14층 주소가 안내판과 일치합니다.",
+      "note": "",
+      "reviewedAt": "2026-10-26"
+    },
+    {
+      "index": 1,
+      "name": "(주)두세븐엔터테인먼트",
+      "category": "웹툰·콘텐츠 제작·출판",
+      "industryDetail": "서적 출판과 웹툰 등 디지털 콘텐츠 제작·유통 사업을 합니다.",
+      "status": "verified",
+      "sourceType": "business_directory",
+      "sources": [
+        {
+          "url": "https://www.saramin.co.kr/zf_user/company-info/view/csn/UEpkRC81Z0Y1Z3RZQ1I1UkZjTkxkZz09/company_nm/%28%EC%A3%BC%29%EB%91%90%EC%84%B8%EB%B8%90%EC%97%94%ED%84%B0%ED%85%8C%EC%9D%B8%EB%A8%BC%ED%8A%B8",
+          "title": "사람인 두세븐엔터테인먼트 기업정보",
+          "evidence": "출판·콘텐츠 제작 사업 및 SH드림타워 1201호가 기재됩니다."
+        },
+        {
+          "url": "https://www.jobkorea.co.kr/Recruit/GI_Read/47805128",
+          "title": "두세븐엔터테인먼트 웹툰 플랫폼 채용정보",
+          "evidence": "1201호에서 웹툰 플랫폼 서비스 기획·운영 인력을 모집합니다."
+        }
+      ],
+      "matchBasis": "상호, 건물 주소 및 1201호가 일치합니다.",
+      "note": "",
+      "reviewedAt": "2026-10-26"
+    },
+    {
+      "index": 2,
+      "name": "(주)샌드힐컨설팅",
+      "category": "IT·경영 컨설팅",
+      "industryDetail": "ICT와 인공지능 전환 관련 전략 및 비즈니스 컨설팅을 제공합니다.",
+      "status": "verified",
+      "sourceType": "official",
+      "sources": [
+        {
+          "url": "https://sandhillconsulting.co.kr/",
+          "title": "샌드힐컨설팅 공식 홈페이지",
+          "evidence": "ICT 혁신·AX·비즈니스 컨설팅과 SH드림타워 1202호를 안내합니다."
+        }
+      ],
+      "matchBasis": "공식 홈페이지의 상호와 1202호가 일치합니다.",
+      "note": "",
+      "reviewedAt": "2026-10-26"
+    },
+    {
+      "index": 3,
+      "name": "(주)무사퇴근",
+      "category": "산업안전 소프트웨어·교육",
+      "industryDetail": "안전보건관리 소프트웨어를 개발·운영하고 안전보건교육 서비스를 제공합니다.",
+      "status": "verified",
+      "sourceType": "official",
+      "sources": [
+        {
+          "url": "https://www.musaday.co.kr/",
+          "title": "무사퇴근 공식 홈페이지",
+          "evidence": "위험성평가, 안전·보건·도급관리 기능을 제공하는 소프트웨어를 소개합니다."
+        },
+        {
+          "url": "https://www.jobkorea.co.kr/recruit/co_read/c/musaday",
+          "title": "잡코리아 무사퇴근 기업정보",
+          "evidence": "무사퇴근 공식 도메인과 가산디지털1로 205-15의 605·606·1204호를 함께 제시합니다."
+        },
+        {
+          "url": "https://musacampus.co.kr/",
+          "title": "무사퇴근캠퍼스 공식 홈페이지",
+          "evidence": "안전보건교육과 SH드림타워 605~606호를 안내합니다."
+        }
+      ],
+      "matchBasis": "채용 기업정보에서 공식 도메인과 안내판의 세 호실이 연결되며, 교육 사이트의 605~606호도 일치합니다.",
+      "note": "소프트웨어 홈페이지의 현재 주소는 성남으로 표기됩니다. 업종만 반영하며 사진의 입주 현황은 변경하지 않습니다.",
+      "reviewedAt": "2026-10-26"
+    },
+    {
+      "index": 4,
+      "name": "(주)데이터투에너지",
+      "category": "전력변환장치·에너지 솔루션",
+      "industryDetail": "태양광 마이크로인버터 및 AI 기반 에너지 진단 솔루션을 개발합니다.",
+      "status": "verified",
+      "sourceType": "official",
+      "sources": [
+        {
+          "url": "https://www.datatoenergy.com/",
+          "title": "데이터투에너지 공식 홈페이지",
+          "evidence": "마이크로인버터와 AI 스마트 에너지 진단 사업을 소개합니다."
+        },
+        {
+          "url": "https://moneypin.biz/bizno/detail/3188505219/",
+          "title": "머니핀 데이터투에너지 사업자정보",
+          "evidence": "한상민 대표와 SH드림타워 1205호 사업장을 확인할 수 있습니다."
+        },
+        {
+          "url": "https://thevc.kr/datatoenergy",
+          "title": "더브이씨 데이터투에너지 기업정보",
+          "evidence": "한상민 대표가 운영하는 마이크로인버터 개발 기업으로 소개됩니다."
+        }
+      ],
+      "matchBasis": "동일 상호·대표자 한상민 및 서울사업장 1205호를 대조했습니다.",
+      "note": "공식 홈페이지의 본사는 나주로 표기됩니다. 1212호는 안내판에만 있어 해당 호실의 별도 온라인 확인은 하지 못했습니다.",
+      "reviewedAt": "2026-10-26"
+    },
+    {
+      "index": 5,
+      "name": "(주)케이현테크",
+      "category": "전자센서 제조",
+      "industryDetail": "복합 온도·습도 센서와 센서 결합 부품을 제조합니다.",
+      "status": "verified",
+      "sourceType": "business_directory",
+      "sources": [
+        {
+          "url": "https://ifactoryhub.com/%EC%84%9C%EC%9A%B8%EC%8B%9C-%EC%84%BC%EC%84%9C-%EA%B3%B5%EC%9E%A5-%EB%A6%AC%EC%8A%A4%ED%8A%B8/",
+          "title": "아이팩토리허브 서울시 센서 공장 목록",
+          "evidence": "가산동 459-6 1206호 케이현테크의 전자감지장치·온습도센서 제조를 기재합니다."
+        },
+        {
+          "url": "https://www.i-um.co.kr/np/area/seoul/26294",
+          "title": "이음 서울 전자감지장치 제조업체 목록",
+          "evidence": "가산디지털1로 205-15 1206호의 케이현테크가 전자감지장치 제조업체로 수록됩니다."
+        }
+      ],
+      "matchBasis": "상호, SH드림타워 도로명·지번 주소 및 1206호가 일치합니다.",
+      "note": "기업정보 사이트 일부에는 다른 주소·업종이 나타나 안내판과 호실이 일치하는 공장 목록을 기준으로 분류했습니다.",
+      "reviewedAt": "2026-10-26"
+    },
+    {
+      "index": 6,
+      "name": "(주)이엔티시스템",
+      "category": "업종 미확인",
+      "industryDetail": "온라인 자료만으로 동일 입주기업의 업종을 확인하지 못했습니다.",
+      "status": "unverified",
+      "sourceType": "unverified",
+      "sources": [],
+      "matchBasis": "동일 입주기업을 특정할 수 있는 온라인 자료를 확보하지 못했습니다.",
+      "note": "정확한 상호와 SH드림타워·1207호를 조합하여 두 검색엔진에서 조회했으나 제이엔티시스템 등 다른 상호만 확인되었습니다.",
+      "reviewedAt": "2026-10-26"
+    },
+    {
+      "index": 7,
+      "name": "(주)신트릭스",
+      "category": "서버·IT 인프라 유통",
+      "industryDetail": "기업용 서버, GPU·AI 서버와 스토리지 서버를 공급하고 고객 환경에 맞는 구성을 제안합니다.",
+      "status": "verified",
+      "sourceType": "official",
+      "sources": [
+        {
+          "url": "https://syntrixglobal.com/bbs/content.php?co_id=distribution",
+          "title": "신트릭스 — 서버 유통 사업",
+          "evidence": "서버 공급 사업과 회사명, SH드림타워 1208호 및 사업자번호를 함께 안내합니다."
+        }
+      ],
+      "matchBasis": "공식 사업소개 페이지의 상호와 SH드림타워 1208호가 일치합니다.",
+      "note": "",
+      "reviewedAt": "2026-10-26"
+    },
+    {
+      "index": 8,
+      "name": "(주)지능정보전략컨설팅",
+      "category": "업종 미확인",
+      "industryDetail": "온라인 자료만으로 동일 입주기업의 업종을 확인하지 못했습니다.",
+      "status": "unverified",
+      "sourceType": "unverified",
+      "sources": [
+        {
+          "url": "https://cookiedeal.io/company-search/3808103635/%EC%A7%80%EB%8A%A5%EC%A0%95%EB%B3%B4%EC%A0%84%EB%9E%B5%EC%BB%A8%EC%84%A4%ED%8C%85",
+          "title": "쿠키딜 지능정보전략컨설팅 기업정보",
+          "evidence": "동명 사업자의 경영컨설팅업 정보가 검색되나 입주 주소를 대조하지 못했습니다."
+        }
+      ],
+      "matchBasis": "SH드림타워 1209호와 후보 기업 사이의 주소 연결 근거가 없습니다.",
+      "note": "상호·건물주소·1209호를 재검색했습니다. 경영컨설팅 후보와 정보화전략 입찰 참여 기록은 있으나 동일 입주기업 확인이 불충분합니다.",
+      "reviewedAt": "2026-10-26"
+    },
+    {
+      "index": 9,
+      "name": "(주)로고스소프트",
+      "category": "소프트웨어 시험·품질 컨설팅",
+      "industryDetail": "소프트웨어 테스트와 품질관리 관련 컨설팅을 제공합니다.",
+      "status": "verified",
+      "sourceType": "business_directory",
+      "sources": [
+        {
+          "url": "https://www.jobkorea.co.kr/Recruit/GI_Read/47478806",
+          "title": "로고스소프트 소프트웨어 테스팅 채용정보",
+          "evidence": "SW 품질관리 컨설팅 회사의 테스팅 직무와 SH드림타워 1210호를 확인할 수 있습니다."
+        },
+        {
+          "url": "https://swtesting.or.kr/front/product/p0501?id=93",
+          "title": "한국소프트웨어테스팅협회 로고스소프트 소개",
+          "evidence": "기업명과 SH드림타워 1210호 주소가 기재됩니다."
+        }
+      ],
+      "matchBasis": "회사명과 1210호가 채용정보 및 산업협회 소개에서 일치합니다.",
+      "note": "",
+      "reviewedAt": "2026-10-26"
+    },
+    {
+      "index": 10,
+      "name": "(주)핏톡",
+      "category": "광고·데이터 마케팅",
+      "industryDetail": "데이터 기반 타깃 광고, 문자 마케팅 및 홈페이지 제작을 제공합니다.",
+      "status": "verified",
+      "sourceType": "official",
+      "sources": [
+        {
+          "url": "https://fittalk.kr/",
+          "title": "핏톡 공식 홈페이지",
+          "evidence": "광고·마케팅 서비스와 주식회사 핏톡, SH드림타워 1211호를 안내합니다."
+        },
+        {
+          "url": "https://fittalk.kr/lms",
+          "title": "핏톡 문자 마케팅 서비스",
+          "evidence": "데이터를 활용한 문자 마케팅 서비스를 소개합니다."
+        }
+      ],
+      "matchBasis": "공식 사이트의 상호와 1211호가 일치합니다.",
+      "note": "",
+      "reviewedAt": "2026-10-26"
+    },
+    {
+      "index": 11,
+      "name": "내일은맑음",
+      "category": "업종 미확인",
+      "industryDetail": "온라인 자료만으로 동일 입주기업의 업종을 확인하지 못했습니다.",
+      "status": "unverified",
+      "sourceType": "unverified",
+      "sources": [
+        {
+          "url": "https://www.i-um.co.kr/kr/companies/external/c095b1c5-345c-427c-b725-06b9e1cfdf30",
+          "title": "이음 내일은맑음 기업정보",
+          "evidence": "검색 결과에서 1213호 및 업종 코드가 확인되었으나 상세 사업내용을 검증하지 못했습니다."
+        }
+      ],
+      "matchBasis": "동일 상호와 1213호의 검색 결과는 있으나 원문 접근 및 사업내용 확인이 불충분합니다.",
+      "note": "상호·주소 및 경영컨설팅 조합으로 재검색했지만 충분한 업종 설명을 확보하지 못했습니다.",
+      "reviewedAt": "2026-10-26"
+    },
+    {
+      "index": 12,
+      "name": "세무사 황양하 사무소",
+      "category": "세무·회계 서비스",
+      "industryDetail": "세무사 사무소로 세무 관련 전문 서비스를 제공합니다.",
+      "status": "verified",
+      "sourceType": "business_directory",
+      "sources": [
+        {
+          "url": "https://bizsurfing.com/%EC%84%9C%EC%9A%B8/%EA%B8%88%EC%B2%9C%EA%B5%AC/%EA%B0%80%EC%82%B0%EB%8F%99/%EC%84%B8%EB%AC%B4%EC%82%AC",
+          "title": "비즈서핑 가산동 세무사 사무소 목록",
+          "evidence": "세무사 황양하 사무소를 가산디지털1로 205-15 SH드림타워 1214호의 세무사로 수록합니다."
+        }
+      ],
+      "matchBasis": "사무소명과 SH드림타워 1214호가 일치합니다.",
+      "note": "세부 특화 업무는 확인하지 못해 세무·회계 서비스로만 표시합니다.",
+      "reviewedAt": "2026-10-26"
+    },
+    {
+      "index": 13,
+      "name": "디웹스",
+      "category": "웹사이트 제작·운영",
+      "industryDetail": "웹사이트 디자인·개발과 유지관리·호스팅 서비스를 제공합니다.",
+      "status": "verified",
+      "sourceType": "official",
+      "sources": [
+        {
+          "url": "https://www.dwebs.kr/about",
+          "title": "디웹스 회사 소개",
+          "evidence": "웹사이트 제작·운영 서비스와 SH드림타워 1215호를 안내합니다."
+        }
+      ],
+      "matchBasis": "공식 홈페이지 상호 및 1215호가 일치합니다.",
+      "note": "",
+      "reviewedAt": "2026-10-26"
+    },
+    {
+      "index": 14,
+      "name": "(주)투게더",
+      "category": "업종 미확인",
+      "industryDetail": "온라인 자료만으로 동일 입주기업의 업종을 확인하지 못했습니다.",
+      "status": "unverified",
+      "sourceType": "unverified",
+      "sources": [],
+      "matchBasis": "동명 업체가 많고 1101·1102호와 연결되는 자료가 없습니다.",
+      "note": "상호·SH드림타워·1101호·도로명주소로 두 검색엔진에서 조회했지만 다른 지역 업체와 무관한 문서가 검색되어 업종을 확정하지 않았습니다.",
+      "reviewedAt": "2026-10-26"
+    },
+    {
+      "index": 15,
+      "name": "세무회계현솔",
+      "category": "세무·회계 서비스",
+      "industryDetail": "세무사업을 영위하는 세무회계 사무소입니다.",
+      "status": "verified",
+      "sourceType": "business_directory",
+      "sources": [
+        {
+          "url": "https://moneypin.biz/bizno/detail/5911102494/",
+          "title": "머니핀 세무회계현솔 사업자정보",
+          "evidence": "세무회계현솔의 업종을 세무사업으로 확인할 수 있습니다."
+        },
+        {
+          "url": "https://www.saramin.co.kr/zf_user/company-info/view/csn/L2poODN0T1FpTnJXNGh2MlVOclhqUT09/company_nm/%EC%84%B8%EB%AC%B4%ED%9A%8C%EA%B3%84%ED%98%84%EC%86%94",
+          "title": "사람인 세무회계현솔 기업정보",
+          "evidence": "상호 및 SH드림타워 1103호 주소가 기재됩니다."
+        }
+      ],
+      "matchBasis": "상호와 SH드림타워 1103호를 사업자·채용 기업정보로 대조했습니다.",
+      "note": "",
+      "reviewedAt": "2026-10-26"
+    },
+    {
+      "index": 16,
+      "name": "YU & PARTNERS",
+      "category": "업종 미확인",
+      "industryDetail": "온라인 자료만으로 동일 입주기업의 업종을 확인하지 못했습니다.",
+      "status": "unverified",
+      "sourceType": "unverified",
+      "sources": [
+        {
+          "url": "https://yuadvisory.com/",
+          "title": "YU & PARTNERS 재무자문 홈페이지",
+          "evidence": "동명 재무·자본·IPO 자문 사업자가 검색되지만 SH드림타워 주소는 확인되지 않았습니다."
+        }
+      ],
+      "matchBasis": "상호만 같고 1104호 또는 건물 주소와의 연결 근거가 없습니다.",
+      "note": "영문 상호·가산·SH드림타워와 공식 도메인 주소를 재검색했습니다. 재무자문 후보를 동일 입주사로 단정하지 않았습니다.",
+      "reviewedAt": "2026-10-26"
+    },
+    {
+      "index": 17,
+      "name": "(주)파이어넷",
+      "category": "방화·내화 건축자재 제조",
+      "industryDetail": "방화용 배관 클램프와 내화채움재 등 건축물 화재 확산 방지 자재를 제조합니다.",
+      "status": "verified",
+      "sourceType": "official",
+      "sources": [
+        {
+          "url": "https://fires.co.kr/products",
+          "title": "파이어넷 제품 안내",
+          "evidence": "방화용 입상배관 클램프·내화충전재 제조와 관련 제품을 소개합니다."
+        },
+        {
+          "url": "https://fires.co.kr/contact",
+          "title": "파이어넷 연락처",
+          "evidence": "서울 사무소의 SH드림타워 1105호 주소를 안내합니다."
+        }
+      ],
+      "matchBasis": "공식 사이트의 회사명과 서울 사무소 1105호가 일치합니다.",
+      "note": "",
+      "reviewedAt": "2026-10-26"
+    },
+    {
+      "index": 18,
+      "name": "(주)보험솔루션",
+      "category": "업종 미확인",
+      "industryDetail": "온라인 자료만으로 동일 입주기업의 업종을 확인하지 못했습니다.",
+      "status": "unverified",
+      "sourceType": "unverified",
+      "sources": [],
+      "matchBasis": "1106호의 동일 법인임을 확인할 자료가 없습니다.",
+      "note": "정확한 상호·1106호·건물주소로 두 검색엔진에서 조회했으나 일반적인 보험 솔루션 문구와 다른 호실의 보험업체만 검색되었습니다.",
+      "reviewedAt": "2026-10-26"
+    },
+    {
+      "index": 19,
+      "name": "빛솔 세무회계",
+      "category": "세무·회계 서비스",
+      "industryDetail": "기장·세금 신고 대리와 세무 상담 등 전문 서비스를 제공합니다.",
+      "status": "verified",
+      "sourceType": "official",
+      "sources": [
+        {
+          "url": "https://fliphtml5.com/yprvk/elkb/",
+          "title": "사업자로 갓생살기 — 송병택 세무사 저자 소개",
+          "evidence": "빛솔 세무회계 송병택 세무사의 SH드림타워 1107호 주소와 세무 업무를 확인할 수 있습니다."
+        },
+        {
+          "url": "https://xn--2e0bl1s.kr/professional/%EB%B9%9B%EC%86%94%EC%84%B8%EB%AC%B4%ED%9A%8C%EA%B3%84",
+          "title": "구로.kr 빛솔 세무회계 소개",
+          "evidence": "송병택 세무사의 기장·신고대리·세무 상담 업무를 안내합니다."
+        }
+      ],
+      "matchBasis": "2026년 발행된 세무사 공저서의 본인 소개에서 상호·세무사명·1107호가 일치합니다.",
+      "note": "일부 상가정보에는 같은 건물의 이전 205호 주소가 남아 있어 저자 소개의 1107호와 구분했습니다.",
+      "reviewedAt": "2026-10-26"
+    },
+    {
+      "index": 20,
+      "name": "어나더웹",
+      "category": "웹사이트 제작·운영",
+      "industryDetail": "반응형 홈페이지와 웹 서비스를 기획·디자인·개발합니다.",
+      "status": "verified",
+      "sourceType": "official",
+      "sources": [
+        {
+          "url": "https://www.another-web.co.kr/",
+          "title": "어나더웹 공식 홈페이지",
+          "evidence": "웹 제작 서비스 및 SH드림타워 1108호를 안내합니다."
+        }
+      ],
+      "matchBasis": "공식 사이트의 상호·건물주소·1108호가 일치합니다.",
+      "note": "",
+      "reviewedAt": "2026-10-26"
+    },
+    {
+      "index": 21,
+      "name": "(주)비앤커뮤니케이션",
+      "category": "업종 미확인",
+      "industryDetail": "온라인 자료만으로 동일 입주기업의 업종을 확인하지 못했습니다.",
+      "status": "unverified",
+      "sourceType": "unverified",
+      "sources": [
+        {
+          "url": "https://gongsinara.com/company/319850",
+          "title": "공시나라 비앤커뮤니케이션 기업정보",
+          "evidence": "서울 성동구의 동명 통신·방송장비 도매업체가 검색됩니다."
+        }
+      ],
+      "matchBasis": "동명 후보의 소재지는 성동구이며 SH드림타워 1109호 연결 근거가 없습니다.",
+      "note": "정확한 상호와 호실·주소로 검색했으나 동일 입주기업을 확인하지 못했습니다. 통신장비 도매업은 후보 정보로만 남깁니다.",
+      "reviewedAt": "2026-10-26"
+    },
+    {
+      "index": 22,
+      "name": "그로먼트",
+      "category": "광고·디지털 마케팅",
+      "industryDetail": "성과형 광고 운영, 콘텐츠 기획 및 데이터 분석 기반 마케팅 서비스를 제공합니다.",
+      "status": "verified",
+      "sourceType": "official",
+      "sources": [
+        {
+          "url": "https://groment.co.kr/",
+          "title": "그로먼트 공식 홈페이지",
+          "evidence": "퍼포먼스 마케팅·온라인 광고·콘텐츠 전략 사업을 소개합니다."
+        },
+        {
+          "url": "https://www.jobkorea.co.kr/Recruit/GI_Read/49552521",
+          "title": "그로먼트 마케팅 채용정보",
+          "evidence": "광고·홍보 업종과 SH드림타워 1110호의 근무지를 확인할 수 있습니다."
+        }
+      ],
+      "matchBasis": "동일 상호의 기업 채용정보에서 마케팅 사업과 1110호를 함께 확인했습니다.",
+      "note": "공식 사이트는 벚꽃로36길 30 KS타워 주소를 사용합니다. 업종 확인 자료로 활용하며 입주 현황은 사진 기준을 유지합니다.",
+      "reviewedAt": "2026-10-26"
+    },
+    {
+      "index": 23,
+      "name": "다움테크(주)",
+      "category": "설비 성능점검·유지관리",
+      "industryDetail": "정보통신설비와 기계설비의 성능점검·유지관리 업무를 제공합니다.",
+      "status": "verified",
+      "sourceType": "official",
+      "sources": [
+        {
+          "url": "https://www.daoomtech.kr/",
+          "title": "다움테크 공식 홈페이지",
+          "evidence": "정보통신·기계설비 성능점검과 유지관리 사업, 서울본사 SH드림타워 1111호를 명시합니다."
+        }
+      ],
+      "matchBasis": "공식 홈페이지의 법인명과 서울본사 1111호가 일치합니다.",
+      "note": "",
+      "reviewedAt": "2026-10-26"
+    },
+    {
+      "index": 24,
+      "name": "(주)하이어에드",
+      "category": "업종 미확인",
+      "industryDetail": "온라인 자료만으로 동일 입주기업의 업종을 확인하지 못했습니다.",
+      "status": "unverified",
+      "sourceType": "unverified",
+      "sources": [],
+      "matchBasis": "1112호 입주사와 연결할 수 있는 기업 자료를 확보하지 못했습니다.",
+      "note": "정확한 상호·주식회사·SH드림타워·1112호로 두 검색엔진에서 조회했으나 해외 고등교육 관련 명칭 등 무관한 자료만 검색되었습니다.",
+      "reviewedAt": "2026-10-26"
+    },
+    {
+      "index": 25,
+      "name": "(주)비에스플래닝",
+      "category": "업종 미확인",
+      "industryDetail": "온라인 자료만으로 동일 입주기업의 업종을 확인하지 못했습니다.",
+      "status": "unverified",
+      "sourceType": "unverified",
+      "sources": [
+        {
+          "url": "https://marketbz.com/companyDetail/5578803030",
+          "title": "마켓비즈 비에스플래닝 기업정보",
+          "evidence": "영등포구에 소재한 동명 신발 소매업체가 검색됩니다."
+        }
+      ],
+      "matchBasis": "후보의 주소는 영등포구로, SH드림타워 1113호 연결 근거가 없습니다.",
+      "note": "상호·가산·1113호를 재검색했으나 동일 입주기업 확인이 불충분합니다. 신발 소매업 후보를 확정 업종에 반영하지 않았습니다.",
+      "reviewedAt": "2026-10-26"
+    },
+    {
+      "index": 26,
+      "name": "(주)와이존",
+      "category": "업종 미확인",
+      "industryDetail": "온라인 자료만으로 동일 입주기업의 업종을 확인하지 못했습니다.",
+      "status": "unverified",
+      "sourceType": "unverified",
+      "sources": [],
+      "matchBasis": "1114호 법인을 특정할 자료가 없습니다.",
+      "note": "정확한 상호·주식회사·SH드림타워·1114호를 두 검색엔진에서 조회했으나 의류 일반용어 및 별도 건강 브랜드가 검색되어 동일기업을 확인하지 못했습니다.",
+      "reviewedAt": "2026-10-26"
+    },
+    {
+      "index": 27,
+      "name": "인토비스(주)",
+      "category": "IT 인프라·정보보안",
+      "industryDetail": "네트워크·시스템 통합, 보안 솔루션 구축, IT 아웃소싱과 유지보수를 제공합니다.",
+      "status": "verified",
+      "sourceType": "official",
+      "sources": [
+        {
+          "url": "https://www.intovice.com/",
+          "title": "인토비스 공식 홈페이지",
+          "evidence": "IT 인프라·보안 사업과 SH드림타워 1115호를 안내합니다."
+        }
+      ],
+      "matchBasis": "공식 홈페이지의 법인명과 1115호가 일치합니다.",
+      "note": "",
+      "reviewedAt": "2026-10-26"
+    },
+    {
+      "index": 28,
+      "name": "(주)지웰에스지",
+      "category": "소프트웨어 개발·시스템 통합",
+      "industryDetail": "웹·앱 소프트웨어 개발과 기업 시스템 구축·운영 서비스를 제공합니다.",
+      "status": "verified",
+      "sourceType": "business_directory",
+      "sources": [
+        {
+          "url": "https://www.saramin.co.kr/zf_user/company-info/view/csn/bE1LZ21OVXJnajRXYkUveXlJVVlGUT09/company_nm/%28%EC%A3%BC%29%EC%A7%80%EC%9B%B0%EC%97%90%EC%8A%A4%EC%A7%80",
+          "title": "사람인 지웰에스지 기업정보",
+          "evidence": "응용 소프트웨어 개발업, SM·SI 서비스 및 SH드림타워 1001호를 기재합니다."
+        }
+      ],
+      "matchBasis": "동일 상호 및 가산디지털1로 205-15 1001호가 일치합니다.",
+      "note": "온라인에서 1001호를 확인했습니다. 1002호는 안내판을 유지하며 별도로 확인하지 못했습니다.",
+      "reviewedAt": "2026-10-26"
+    },
+    {
+      "index": 29,
+      "name": "(주)엔티웍스",
+      "category": "업종 미확인",
+      "industryDetail": "온라인 자료만으로 동일 입주기업의 업종을 확인하지 못했습니다.",
+      "status": "unverified",
+      "sourceType": "unverified",
+      "sources": [
+        {
+          "url": "https://app.rndcircle.io/company/11e82d73-b303-5e55-b3d4-ad25bee777ce",
+          "title": "RND Circle 엔티웍스 기업정보",
+          "evidence": "가산디지털1로 171 소재의 동명 콘텐츠 유통업체가 검색됩니다."
+        },
+        {
+          "url": "https://m.nicebizinfo.com/ep/EP0100M002GE.nice?kiscode=OS2490",
+          "title": "NICE 엔티웍스 기업정보",
+          "evidence": "서초구 소재의 동명 기계 제조업체도 검색됩니다."
+        }
+      ],
+      "matchBasis": "서로 다른 동명 후보들이 있으며 SH드림타워 1003호와 연결되지 않습니다.",
+      "note": "상호·건물·도로명주소·1003호를 두 검색엔진에서 조회했습니다. 콘텐츠 유통업 및 기계 제조업 후보를 모두 확정 업종에서 제외했습니다.",
+      "reviewedAt": "2026-10-26"
+    },
+    {
+      "index": 30,
+      "name": "(주)카티디시",
+      "category": "데이터센터 인프라·컨설팅",
+      "industryDetail": "데이터센터 매칭, 인프라 구축 및 개발사업 관련 컨설팅을 제공합니다.",
+      "status": "verified",
+      "sourceType": "official",
+      "sources": [
+        {
+          "url": "https://katidc.com/%ED%9A%8C%EC%82%AC%EC%86%8C%EA%B0%9C/",
+          "title": "카티디시 공식 회사소개",
+          "evidence": "데이터센터 인프라·비즈니스 지원 사업과 SH드림타워 1004호를 명시합니다."
+        }
+      ],
+      "matchBasis": "공식 홈페이지의 상호와 가산디지털1로 205-15 1004호가 일치합니다.",
+      "note": "",
+      "reviewedAt": "2026-10-26"
+    },
+    {
+      "index": 31,
+      "name": "(주)팜스퀘어",
+      "category": "스마트팜·농업 서비스",
+      "industryDetail": "스마트팜 분야의 사업을 운영하며 해외 사업 업무를 수행합니다.",
+      "status": "verified",
+      "sourceType": "business_directory",
+      "sources": [
+        {
+          "url": "https://www.jobkorea.co.kr/Recruit/GI_Read/48487428",
+          "title": "팜스퀘어 스마트팜 글로벌사업 채용정보",
+          "evidence": "팜스퀘어의 스마트팜 글로벌사업 직무, 농업 분야 분류와 SH드림타워 1005호를 확인할 수 있습니다."
+        }
+      ],
+      "matchBasis": "상호와 1005호가 기업 채용정보에 일치합니다.",
+      "note": "구체적인 재배 작물·제품·설비 제조 여부는 확인되지 않아 넓은 사업분야로 표시합니다.",
+      "reviewedAt": "2026-10-26"
+    },
+    {
+      "index": 32,
+      "name": "(주)엠에스티지",
+      "category": "국방 시뮬레이션 소프트웨어",
+      "industryDetail": "국방 모델링·시뮬레이션(M&S) 연구와 분석·시뮬레이션 소프트웨어를 개발합니다.",
+      "status": "verified",
+      "sourceType": "official",
+      "sources": [
+        {
+          "url": "https://www.mstg.pro/about/company",
+          "title": "엠에스티지 공식 회사소개",
+          "evidence": "국방 M&S 연구개발과 SH드림타워 1006호 주소를 안내합니다."
+        },
+        {
+          "url": "https://mstg.pro/",
+          "title": "엠에스티지 공식 홈페이지",
+          "evidence": "교전분석 모델과 2D·3D 시뮬레이션 등 주요 개발 분야를 소개합니다."
+        }
+      ],
+      "matchBasis": "공식 홈페이지의 회사명과 1006호가 일치합니다.",
+      "note": "",
+      "reviewedAt": "2026-10-26"
+    },
+    {
+      "index": 33,
+      "name": "(주)러닝포인트",
+      "category": "스포츠 플랫폼·행사 운영",
+      "industryDetail": "랭킹마라톤 등 러닝 플랫폼을 개발·운영하고 마라톤 행사를 제공합니다.",
+      "status": "verified",
+      "sourceType": "official",
+      "sources": [
+        {
+          "url": "https://www.animallace.com/index",
+          "title": "러닝포인트 애니멀런 공식 사이트",
+          "evidence": "마라톤 행사를 운영하며 사업자 표기에 러닝포인트와 SH드림타워 1007·1008호가 기재됩니다."
+        },
+        {
+          "url": "https://jumpit.saramin.co.kr/position/54866536",
+          "title": "러닝포인트 개발자 채용정보",
+          "evidence": "랭킹마라톤 앱 개발·운영과 SH드림타워 1007~1008호 근무지를 확인할 수 있습니다."
+        }
+      ],
+      "matchBasis": "공식 서비스 사이트의 법인명 및 1007·1008호를 채용정보와 함께 대조했습니다.",
+      "note": "1011호는 안내판에만 있어 별도의 온라인 확인은 하지 못했습니다.",
+      "reviewedAt": "2026-10-26"
+    },
+    {
+      "index": 34,
+      "name": "(주)엠앤엠텍스타일",
+      "category": "섬유·원단 기획·유통",
+      "industryDetail": "직물 원단의 소재 기획, 영업과 생산 관리를 수행합니다.",
+      "status": "verified",
+      "sourceType": "business_directory",
+      "sources": [
+        {
+          "url": "https://www.jobkorea.co.kr/Recruit/GI_Read/49750186",
+          "title": "엠앤엠텍스타일 원단 소재기획·영업지원 채용",
+          "evidence": "원단 관련 채용 직무와 SH드림타워 1009~1010호 근무지를 함께 표기합니다."
+        },
+        {
+          "url": "https://www.jobkorea.co.kr/Recruit/GI_Read/48162014",
+          "title": "엠앤엠텍스타일 원단 영업·생산관리 채용",
+          "evidence": "직물 원단 영업 및 생산 관리 직무를 안내합니다."
+        }
+      ],
+      "matchBasis": "상호 및 가산디지털1로 205-15의 1009·1010호가 안내판과 일치합니다.",
+      "note": "",
+      "reviewedAt": "2026-10-26"
+    },
+    {
+      "index": 35,
+      "name": "(주)한마정보시스템",
+      "category": "소프트웨어 개발·시스템 통합",
+      "industryDetail": "업무용 소프트웨어와 연구·성과 관리 시스템을 개발하며 전산 설비 관리·컨설팅을 제공합니다.",
+      "status": "verified",
+      "sourceType": "official",
+      "sources": [
+        {
+          "url": "https://hanma.co.kr/sub_03.html",
+          "title": "한마정보시스템 오시는 길",
+          "evidence": "서울지사를 SH드림타워 1012호로 안내합니다."
+        },
+        {
+          "url": "https://www.jobkorea.co.kr/recruit/co_read/c/hanma11",
+          "title": "한마정보시스템 기업정보",
+          "evidence": "소프트웨어 개발·공급, 컴퓨터 설비 관리와 연구·성과 관리 시스템을 설명합니다."
+        }
+      ],
+      "matchBasis": "공식 서울지사 주소의 건물과 1012호 및 상호가 일치합니다.",
+      "note": "",
+      "reviewedAt": "2026-10-26"
+    },
+    {
+      "index": 36,
+      "name": "(주)몽키소프트",
+      "category": "산업 AI·소프트웨어 개발",
+      "industryDetail": "센서와 PLC·CCTV·LiDAR를 연결한 산업 현장 모니터링, 자산 관리 및 안전·자동화 시스템을 개발합니다.",
+      "status": "verified",
+      "sourceType": "official",
+      "sources": [
+        {
+          "url": "https://monkeysoft.co.kr/about",
+          "title": "몽키소프트 회사소개",
+          "evidence": "산업 AI, 통합 모니터링과 안전·자동화 시스템 개발을 소개합니다."
+        },
+        {
+          "url": "https://monkeysoft.co.kr/",
+          "title": "몽키소프트 공식 홈페이지",
+          "evidence": "회사명과 가산디지털1로 205-15, 1013호를 표기합니다."
+        }
+      ],
+      "matchBasis": "공식 홈페이지의 법인명·건물 주소·1013호가 일치합니다.",
+      "note": "",
+      "reviewedAt": "2026-10-26"
+    },
+    {
+      "index": 37,
+      "name": "(주)브이아이텍",
+      "category": "IT 하드웨어·소프트웨어 개발",
+      "industryDetail": "IT 하드웨어 및 관련 소프트웨어를 개발하고 전산 환경 개선 서비스를 제공합니다.",
+      "status": "verified",
+      "sourceType": "official",
+      "sources": [
+        {
+          "url": "https://vitec.co.kr/design/",
+          "title": "브이아이텍 설계·개발",
+          "evidence": "하드웨어와 관련 소프트웨어 개발 및 IT 환경 개선을 소개합니다."
+        },
+        {
+          "url": "https://vitec.co.kr/contact/",
+          "title": "브이아이텍 연락처",
+          "evidence": "SH드림타워 1014·1015호를 사업장으로 안내합니다."
+        }
+      ],
+      "matchBasis": "공식 연락처에 안내판과 같은 건물 및 1014·1015호가 확인됩니다.",
+      "note": "이름이 비슷한 비전브이아이텍 자료는 사용하지 않았습니다.",
+      "reviewedAt": "2026-10-26"
+    },
+    {
+      "index": 38,
+      "name": "Dentlink",
+      "category": "치과 기공물 플랫폼·제조",
+      "industryDetail": "Dentlink는 치과와 치과 기공소를 연결하는 플랫폼이며 운영사 이노바이드는 치과 보철물 제조·수출 사업을 안내합니다.",
+      "status": "verified",
+      "sourceType": "business_directory",
+      "sources": [
+        {
+          "url": "https://demoday.co.kr/recruits/33293",
+          "title": "이노바이드 CNC 설비 운영 채용",
+          "evidence": "Dentlink 플랫폼 운영, 디지털 치과 기공과 보철물 수출을 설명하고 SH드림타워 지하 1층·9층을 기재합니다."
+        },
+        {
+          "url": "https://www.wanted.co.kr/wd/387660",
+          "title": "이노바이드 SCM 채용",
+          "evidence": "Dentlink 사업과 SH드림타워 지하 1층·9층 근무지를 안내합니다."
+        }
+      ],
+      "matchBasis": "서비스명 Dentlink와 운영사 이노바이드의 관계, SH드림타워 9층·지하 1층 위치가 함께 확인됩니다.",
+      "note": "안내판의 서비스명 Dentlink를 유지했습니다. 개별 호실은 공개 자료에서 모두 확인되지 않았습니다.",
+      "reviewedAt": "2026-10-26"
+    },
+    {
+      "index": 39,
+      "name": "(주)에스케이엔피",
+      "category": "업종 미확인",
+      "industryDetail": "해당 입주기업과 연결되는 사업 내용을 확인하지 못했습니다.",
+      "status": "unverified",
+      "sourceType": "unverified",
+      "sources": [],
+      "matchBasis": "SH드림타워 903호와 연결되는 동일기업 자료를 확보하지 못했습니다.",
+      "note": "상호·가산·903호·건물 주소로 두 검색엔진을 조회했습니다. 과거 다른 주소의 동명 회사 자료만 있어 업종을 반영하지 않았습니다.",
+      "reviewedAt": "2026-10-26"
+    },
+    {
+      "index": 40,
+      "name": "도심전기",
+      "category": "건축 전기설계",
+      "industryDetail": "건축물의 전기 설계 업무를 수행합니다.",
+      "status": "verified",
+      "sourceType": "business_directory",
+      "sources": [
+        {
+          "url": "https://www.jobkorea.co.kr/Recruit/GI_Read/50197856",
+          "title": "도심전기 건축전기설계 경력자 채용",
+          "evidence": "건축 전기설계 직무와 가산디지털1로 205-15의 SH드림타워 근무지를 안내합니다."
+        }
+      ],
+      "matchBasis": "상호 및 SH드림타워의 도로명 주소가 일치합니다.",
+      "note": "공개 채용자료에서 904호까지는 확인되지 않았습니다.",
+      "reviewedAt": "2026-10-26"
+    },
+    {
+      "index": 41,
+      "name": "(주)이즈원소프트",
+      "category": "정보보안 소프트웨어",
+      "industryDetail": "키 관리와 모바일·키오스크 등 환경에 적용하는 통합 보안 솔루션을 개발·공급합니다.",
+      "status": "verified",
+      "sourceType": "official",
+      "sources": [
+        {
+          "url": "https://isonesoft.com/",
+          "title": "이즈원소프트 공식 홈페이지",
+          "evidence": "보안 솔루션 제품과 가산디지털1로 205-15, 905·906호를 소개합니다."
+        },
+        {
+          "url": "https://www.isonesoft.com/company",
+          "title": "이즈원소프트 회사소개",
+          "evidence": "통합 보안 솔루션 개발·공급 사업을 안내합니다."
+        }
+      ],
+      "matchBasis": "공식 회사명과 905·906호 주소가 안내판과 일치합니다.",
+      "note": "",
+      "reviewedAt": "2026-10-26"
+    },
+    {
+      "index": 42,
+      "name": "(주)두왓",
+      "category": "호텔 운영 소프트웨어·플랫폼",
+      "industryDetail": "스마트 호텔 솔루션과 호텔 서비스 운영 플랫폼을 제공합니다.",
+      "status": "verified",
+      "sourceType": "business_directory",
+      "sources": [
+        {
+          "url": "https://www.saramin.co.kr/zf_user/jobs/view?rec_idx=54072239",
+          "title": "두왓 스마트 호텔 솔루션 서비스 채용",
+          "evidence": "스마트 호텔 솔루션 운영·기획 직무와 SH드림타워 907~911호 근무지를 안내합니다."
+        }
+      ],
+      "matchBasis": "법인명과 같은 건물의 907~911호가 일치합니다.",
+      "note": "",
+      "reviewedAt": "2026-10-26"
+    },
+    {
+      "index": 43,
+      "name": "(주)아성테크솔루션",
+      "category": "중고휴대폰 상품화·전자상거래",
+      "industryDetail": "중고휴대폰에 필름·케이스 등을 부착하여 상품화하고 택배 출고 업무를 수행합니다.",
+      "status": "verified",
+      "sourceType": "business_directory",
+      "sources": [
+        {
+          "url": "https://m.albamon.com/jobs/detail-company/7pUw9Q2t_JSrJCf1HMM1tA==",
+          "title": "아성테크솔루션 기업정보",
+          "evidence": "기업이 등록한 사업 내용은 중고휴대폰 상품화·택배 출고이며, 전자상거래 업종과 801호 주소를 표기합니다."
+        }
+      ],
+      "matchBasis": "상호와 가산디지털1로 205-15, 801호가 일치합니다.",
+      "note": "일부 기업DB의 소프트웨어 분류보다 호실이 일치하는 기업 채용 소개의 구체적 사업 내용을 우선했습니다.",
+      "reviewedAt": "2026-10-26"
+    },
+    {
+      "index": 44,
+      "name": "한길세무회계사무소",
+      "category": "세무·회계 서비스",
+      "industryDetail": "세무 신고와 세무·회계 업무를 수행하는 사무소입니다.",
+      "status": "verified",
+      "sourceType": "business_directory",
+      "sources": [
+        {
+          "url": "https://www.jobkorea.co.kr/Recruit/GI_Read/49506938",
+          "title": "한길세무회계사무소 부가세신고 채용",
+          "evidence": "동명 사무소가 세무 신고 업무와 같은 건물 204호 근무지를 기재합니다."
+        }
+      ],
+      "matchBasis": "공개 채용자료의 상호와 SH드림타워 도로명주소가 일치합니다.",
+      "note": "공개 채용자료의 근무지는 204호로 안내판의 802호와 다릅니다. 같은 상호·건물의 사업분야만 반영했으며 호실은 안내판 표기를 유지합니다.",
+      "reviewedAt": "2026-10-26"
+    },
+    {
+      "index": 45,
+      "name": "(주)비컨솔루션즈",
+      "category": "번역·통역·현지화",
+      "industryDetail": "문서 번역과 통역, 소프트웨어·게임·영상 콘텐츠의 현지화 서비스를 제공합니다.",
+      "status": "verified",
+      "sourceType": "official",
+      "sources": [
+        {
+          "url": "https://beaconsolutions.co.kr/skin/page/translate_kr.html",
+          "title": "비컨솔루션즈 번역 서비스",
+          "evidence": "IT·소프트웨어, 게임, 영상·자막 등 분야의 번역·현지화 서비스를 설명합니다."
+        },
+        {
+          "url": "https://www.i-um.co.kr/en/area/seoul/73902",
+          "title": "비컨솔루션즈 기업정보",
+          "evidence": "상호, SH드림타워 8층 803호, 통번역 서비스를 함께 기재합니다."
+        }
+      ],
+      "matchBasis": "기업정보의 동일 상호·803호·통번역 사업을 공식 회사 서비스와 대조했습니다.",
+      "note": "공식 사이트에는 가산디지털1로 205-27의 다른 사업장 주소도 표기되어 있어 최신 입주 여부는 별도 확인이 필요합니다.",
+      "reviewedAt": "2026-10-26"
+    },
+    {
+      "index": 46,
+      "name": "누리메이드",
+      "category": "밀키트 기획·식품 유통",
+      "industryDetail": "밀키트 제품 기획과 OEM·ODM, 브랜드·포장 개발 및 유통·마케팅을 제공합니다.",
+      "status": "verified",
+      "sourceType": "official",
+      "sources": [
+        {
+          "url": "https://timecook.co.kr/shopinfo/company.html",
+          "title": "타임쿡·누리메이드 회사소개",
+          "evidence": "누리메이드의 밀키트 사업과 대표자·사업자번호, SH드림타워 804호를 안내합니다."
+        },
+        {
+          "url": "https://moneypin.biz/bizno/detail/2924701049/",
+          "title": "누리메이드 사업자정보",
+          "evidence": "동일 사업자번호와 SH드림타워 804호를 확인할 수 있습니다."
+        }
+      ],
+      "matchBasis": "공식 쇼핑몰 회사소개 및 사업자정보의 누리메이드 상호·804호가 일치합니다.",
+      "note": "",
+      "reviewedAt": "2026-10-26"
+    },
+    {
+      "index": 47,
+      "name": "에이치에이미디어",
+      "category": "영상 콘텐츠 제작·브랜드 마케팅",
+      "industryDetail": "라이프스타일 리뷰 영상을 기획·제작하고 브랜드 협업과 광고 활용 콘텐츠를 운영합니다.",
+      "status": "verified",
+      "sourceType": "business_directory",
+      "sources": [
+        {
+          "url": "https://www.albamon.com/jobs/detail-company/_nttuItJ13XVdErGmk0nEg==",
+          "title": "에이치에이미디어 기업소개",
+          "evidence": "뷰티·건강·생활 분야 리뷰 콘텐츠의 기획, 촬영, 편집과 브랜드 협업을 설명합니다."
+        },
+        {
+          "url": "https://www.jobkorea.co.kr/Recruit/GI_Read/50083811",
+          "title": "에이치에이미디어 콘텐츠 브랜드 협업 채용",
+          "evidence": "리뷰 콘텐츠 관련 업무와 SH드림타워 805호 근무지를 안내합니다."
+        }
+      ],
+      "matchBasis": "상호와 SH드림타워 805호 채용자료를 기업 사업소개와 대조했습니다.",
+      "note": "",
+      "reviewedAt": "2026-10-26"
+    },
+    {
+      "index": 48,
+      "name": "(주)에이케이에이",
+      "category": "업종 미확인",
+      "industryDetail": "SH드림타워 806호 입주기업의 업종을 확인할 근거가 부족합니다.",
+      "status": "unverified",
+      "sourceType": "unverified",
+      "sources": [
+        {
+          "url": "https://www.akasus.com/",
+          "title": "에이케이에이 환경·지속가능경영 컨설팅 후보",
+          "evidence": "동명 회사가 환경·지속가능경영 컨설팅 사업을 소개하지만 안내판 806호와 연결되는 주소 근거를 확보하지 못했습니다."
+        }
+      ],
+      "matchBasis": "환경컨설팅 회사와 소프트웨어 회사 등 동명 기업이 있어 806호 입주사로 특정하지 못했습니다.",
+      "note": "상호·806호·SH드림타워·도로명 주소를 두 검색엔진에서 검색했으나 일치 주소를 찾지 못했습니다. 환경컨설팅은 후보 정보로만 남깁니다.",
+      "reviewedAt": "2026-10-26"
+    },
+    {
+      "index": 49,
+      "name": "아이비앤아이(주)",
+      "category": "IT·정보보안 솔루션",
+      "industryDetail": "전산 인프라 통합, 백업, 서버·화면 보안과 보안 검증·모니터링 솔루션을 제공합니다.",
+      "status": "verified",
+      "sourceType": "official",
+      "sources": [
+        {
+          "url": "https://ibni.co.kr/",
+          "title": "아이비앤아이 공식 홈페이지",
+          "evidence": "IT·보안 제품군과 회사명, 사업자번호 및 SH드림타워 807호를 표기합니다."
+        }
+      ],
+      "matchBasis": "공식 회사명의 상호 및 SH드림타워 807호가 일치합니다.",
+      "note": "",
+      "reviewedAt": "2026-10-26"
+    },
+    {
+      "index": 50,
+      "name": "케이디앤비(주)",
+      "category": "자연과학 연구개발",
+      "industryDetail": "기업정보에 물리·화학·생물학 연구개발 업종으로 등록되어 있습니다.",
+      "status": "verified",
+      "sourceType": "business_directory",
+      "sources": [
+        {
+          "url": "https://moneypin.biz/bizno/detail/3958703866/",
+          "title": "케이디앤비 사업자정보",
+          "evidence": "대표자 유창혁과 가산디지털1로 205-15, 808호를 기재합니다."
+        },
+        {
+          "url": "https://www.nicebizinfo.com/ep/EP0100M002GE.nice?kiscode=SK2266",
+          "title": "케이디앤비 기업정보",
+          "evidence": "대표자 유창혁 및 물리·화학·생물학 연구개발업 분류를 확인할 수 있습니다."
+        }
+      ],
+      "matchBasis": "808호 사업자정보와 기업DB의 동일 법인명·대표자 유창혁을 교차 대조했습니다.",
+      "note": "세부 연구 분야와 서비스는 공개 자료에서 확인되지 않았습니다. 다른 대표자의 동명 기업 자료는 제외했습니다.",
+      "reviewedAt": "2026-10-26"
+    },
+    {
+      "index": 51,
+      "name": "(주)엘리트게임즈",
+      "category": "게임 운영·퍼블리싱·현지화",
+      "industryDetail": "온라인·모바일 게임의 글로벌 운영, 퍼블리싱 지원, 고객·품질 관리와 번역 서비스를 제공합니다.",
+      "status": "verified",
+      "sourceType": "business_directory",
+      "sources": [
+        {
+          "url": "https://www.gamejob.co.kr/Company/Detail?M=24145312",
+          "title": "엘리트게임즈 기업소개",
+          "evidence": "글로벌 게임 운영·퍼블리싱 지원 사업과 SH드림타워 809호 주소를 소개합니다."
+        },
+        {
+          "url": "https://www.jobkorea.co.kr/company/43458201",
+          "title": "엘리트게임즈 기업정보",
+          "evidence": "게임 운영·고객 관리·번역 사업 및 809호 주소를 기재합니다."
+        }
+      ],
+      "matchBasis": "상호와 대표자 백종혁, SH드림타워 809호가 기업 소개에서 일치합니다.",
+      "note": "",
+      "reviewedAt": "2026-10-26"
+    },
+    {
+      "index": 52,
+      "name": "에스에이치엔솔(주)",
+      "category": "환경설비·대기오염 방지",
+      "industryDetail": "대기오염 방지시설 등 환경설비의 설계·시공과 환경 관련 엔지니어링 용역을 수행합니다.",
+      "status": "verified",
+      "sourceType": "business_directory",
+      "sources": [
+        {
+          "url": "https://www.saramin.co.kr/zf_user/company-info/view/csn/bWpublZEOThEbmVSaW9GNHZmL1FRUT09/company_nm/에스에이치엔솔(주)",
+          "title": "에스에이치엔솔 기업정보",
+          "evidence": "환경설비 건설, 환경시설 설계·평가 용역 사업과 SH드림타워 810호를 기재합니다."
+        }
+      ],
+      "matchBasis": "동일 법인명 및 가산디지털1로 205-15, 810호를 확인했습니다.",
+      "note": "",
+      "reviewedAt": "2026-10-26"
+    },
+    {
+      "index": 53,
+      "name": "키노파트너스(주)",
+      "category": "경영 컨설팅",
+      "industryDetail": "기업정보의 사업 내용과 업종에 경영 컨설팅을 명시하고 있습니다.",
+      "status": "verified",
+      "sourceType": "business_directory",
+      "sources": [
+        {
+          "url": "https://www.saramin.co.kr/zf_user/company-info/view/csn/Y0VQRUYrZTNOdjFFZzd6U2RUdGRVUT09/company_nm/키노파트너스(주)",
+          "title": "키노파트너스 기업정보",
+          "evidence": "대표자 남경석, 경영 컨설팅업과 SH드림타워 811호를 기재합니다."
+        }
+      ],
+      "matchBasis": "동일 법인명·대표자 남경석 및 811호가 확인됩니다.",
+      "note": "다른 대표자의 용인 소재 동명 회사는 제외했습니다. 세부 컨설팅 분야는 확인되지 않았습니다.",
+      "reviewedAt": "2026-10-26"
+    },
+    {
+      "index": 54,
+      "name": "(주)삼정메카텍",
+      "category": "업종 미확인",
+      "industryDetail": "SH드림타워 812호 입주기업과 검색된 기업의 동일성을 확인하지 못했습니다.",
+      "status": "unverified",
+      "sourceType": "unverified",
+      "sources": [
+        {
+          "url": "https://samjungmct.com/",
+          "title": "삼정메카텍 공식 홈페이지 후보",
+          "evidence": "동명 회사는 자동화·반도체 장비와 소프트웨어 사업을 소개합니다."
+        },
+        {
+          "url": "https://www.catch.co.kr/Comp/CompSummary/OU9956",
+          "title": "삼정메카텍 기업정보 후보",
+          "evidence": "동명 기업의 본사는 경기 오산시로 기재되어 안내판 주소와 다릅니다."
+        }
+      ],
+      "matchBasis": "검색된 오산 소재 기업과 SH드림타워 812호를 연결할 지사·이전 정보가 확인되지 않았습니다.",
+      "note": "상호·812호·SH·드림타워·도로명 주소를 두 검색엔진으로 조회했습니다. 자동화 장비 사업은 후보이며 입주사 업종으로 확정하지 않았습니다.",
+      "reviewedAt": "2026-10-26"
+    },
+    {
+      "index": 55,
+      "name": "(주)국대디자인",
+      "category": "실내건축·인테리어 설계",
+      "industryDetail": "실내 장식과 내장 목공, 인테리어 디자인·설계 업무를 수행합니다.",
+      "status": "verified",
+      "sourceType": "business_directory",
+      "sources": [
+        {
+          "url": "https://www.jobkorea.co.kr/Recruit/Co_Read/C/kukdaedesign/Company_name/㈜국대디자인",
+          "title": "국대디자인 기업정보",
+          "evidence": "실내 장식·목공, 인테리어 디자인 설계 사업과 대표자 김민우, SH드림타워 813호를 기재합니다."
+        }
+      ],
+      "matchBasis": "동일 상호 및 가산디지털1로 205-15, 813호가 일치합니다.",
+      "note": "",
+      "reviewedAt": "2026-10-26"
+    },
+    {
+      "index": 56,
+      "name": "(주)밤커넥트",
+      "category": "온라인 콘텐츠·웹하드 서비스",
+      "industryDetail": "온라인 콘텐츠 및 웹하드 사이트 운영 사업을 수행합니다.",
+      "status": "verified",
+      "sourceType": "business_directory",
+      "sources": [
+        {
+          "url": "https://www.jobkorea.co.kr/Recruit/GI_Read/50058359",
+          "title": "밤커넥트 웹하드 사이트 운영 채용",
+          "evidence": "웹하드 사이트 운영팀 채용과 포털·콘텐츠 업종, SH드림타워 814호를 안내합니다."
+        }
+      ],
+      "matchBasis": "동일 법인명 및 SH드림타워 814호 근무지가 일치합니다.",
+      "note": "",
+      "reviewedAt": "2026-10-26"
+    },
+    {
+      "index": 57,
+      "name": "유니랜서",
+      "category": "영상 제작·콘텐츠 마케팅",
+      "industryDetail": "브랜딩·제품 홍보·교육 영상, 모션그래픽과 유튜브 콘텐츠를 기획·제작합니다.",
+      "status": "verified",
+      "sourceType": "official",
+      "sources": [
+        {
+          "url": "https://uni-lancer.com/video-n",
+          "title": "유니랜서 영상 제작 서비스",
+          "evidence": "브랜드·커머스·교육 영상과 유튜브 콘텐츠 서비스를 소개합니다."
+        },
+        {
+          "url": "https://uni-lancer.com/",
+          "title": "유니랜서 공식 홈페이지",
+          "evidence": "대표자 신보민과 가산디지털1로 205-15, 815호 연락처를 표기합니다."
+        }
+      ],
+      "matchBasis": "공식 사이트 회사명과 연락처에 안내된 건물 주소·815호가 일치합니다.",
+      "note": "사이트의 별도 사업자정보 영역에는 과거로 보이는 다른 주소도 남아 있어 연락처 영역의 815호와 대조했습니다.",
+      "reviewedAt": "2026-10-26"
+    },
+    {
+      "index": 58,
+      "name": "더원서포터즈",
+      "category": "업종 미확인",
+      "industryDetail": "SH드림타워 701·702호 입주기업과 공개 자료를 연결하지 못했습니다.",
+      "status": "unverified",
+      "sourceType": "unverified",
+      "sources": [
+        {
+          "url": "https://m.jobkorea.co.kr/company/49403715",
+          "title": "더원서포터즈 기업정보 후보",
+          "evidence": "동명 회사는 기업컨설팅을 주요사업으로 기재하나 안양시 소재입니다."
+        },
+        {
+          "url": "https://m.jobkorea.co.kr/company/49403715/Recruit?page=2",
+          "title": "더원서포터즈 채용자료 후보",
+          "evidence": "콜센터·아웃바운드 상담원 채용 이력이 있으나 SH드림타워 입주사와 연결되지 않습니다."
+        }
+      ],
+      "matchBasis": "상호 외에는 701·702호 입주사와 대조할 주소 근거가 없습니다.",
+      "note": "상호·701호·SH드림타워·205-15로 두 검색엔진을 조회했습니다. 안양 소재 기업컨설팅·콜센터 회사는 후보로만 남깁니다.",
+      "reviewedAt": "2026-10-26"
+    },
+    {
+      "index": 59,
+      "name": "오벳개발(주)",
+      "category": "업종 미확인",
+      "industryDetail": "동일 주소의 기업은 확인했지만 업종 자료가 서로 달라 세부 사업 확인이 필요합니다.",
+      "status": "unverified",
+      "sourceType": "unverified",
+      "sources": [
+        {
+          "url": "https://www.sankun.com/company-info/FHtsav62kwMY72wvhYIRhQ",
+          "title": "오벳개발 기업정보",
+          "evidence": "대표자 정화정과 SH드림타워 703호를 기재하며 건설 기업으로 소개합니다."
+        },
+        {
+          "url": "https://www.jobkorea.co.kr/company/48628651",
+          "title": "오벳개발 기업정보",
+          "evidence": "건설·시공·토목·조경으로 분류하지만 구체적인 사업 내용은 없습니다."
+        },
+        {
+          "url": "https://www.saramin.co.kr/zf_user/company-info/view-inner-recruit/csn/LzR0VGI4TlJnaHQ3ckhwaVAxRy9Pdz09/company_nm/오벳개발(주)",
+          "title": "오벳개발 채용 기업정보",
+          "evidence": "동명 기업의 업종은 냉장·냉동 창고업으로 표기되어 다른 자료와 차이가 있습니다."
+        }
+      ],
+      "matchBasis": "건설DB에서 상호·703호는 일치하지만 실제 주력 사업을 특정하기에는 자료가 상충합니다.",
+      "note": "상호·대표자·703호를 검색했습니다. 건설, 부동산, 냉장·냉동 창고업 분류가 혼재하여 업종을 확정하지 않았습니다.",
+      "reviewedAt": "2026-10-26"
+    },
+    {
+      "index": 60,
+      "name": "(주)카고쿨",
+      "category": "업종 미확인",
+      "industryDetail": "해당 상호와 입주 호실을 함께 확인할 수 있는 공개 자료를 찾지 못했습니다.",
+      "status": "unverified",
+      "sourceType": "unverified",
+      "sources": [],
+      "matchBasis": "SH드림타워 704호 또는 107호와 연결되는 기업정보가 없습니다.",
+      "note": "카고쿨 상호, 가산, 704호, 도로명 주소를 두 검색엔진에서 조회했으나 관련 회사 자료가 확인되지 않았습니다. 이름만으로 물류 업종을 추정하지 않았습니다.",
+      "reviewedAt": "2026-10-26"
+    },
+    {
+      "index": 61,
+      "name": "안성소프트(주)",
+      "category": "업종 미확인",
+      "industryDetail": "SH드림타워 705호 입주기업의 사업 내용을 확인할 공개 자료가 부족합니다.",
+      "status": "unverified",
+      "sourceType": "unverified",
+      "sources": [],
+      "matchBasis": "상호와 705호 주소를 함께 대조할 자료가 없습니다.",
+      "note": "안성소프트 상호와 가산·도로명 주소를 두 검색엔진으로 검색했으나 관련 기업을 찾지 못했습니다. 이름만으로 소프트웨어 업종을 단정하지 않았습니다.",
+      "reviewedAt": "2026-10-26"
+    },
+    {
+      "index": 62,
+      "name": "리치통신",
+      "category": "ERP·업무 소프트웨어 개발",
+      "industryDetail": "기업 업무를 관리하는 ERP 소프트웨어를 개발합니다.",
+      "status": "verified",
+      "sourceType": "business_directory",
+      "sources": [
+        {
+          "url": "https://www.i-um.co.kr/kr/companies/external/6114e894-7749-418c-8f7f-074f1a008eeb",
+          "title": "리치통신 기업정보",
+          "evidence": "주요 생산품을 ERP 개발로 기재하고 가산디지털1로 205-15, 7층 706호를 안내합니다."
+        }
+      ],
+      "matchBasis": "동일 상호 및 706호와 ERP 개발이라는 사업 내용이 한 자료에서 확인됩니다.",
+      "note": "다른 지역의 동명 휴대전화 판매점 자료는 사용하지 않았습니다.",
+      "reviewedAt": "2026-10-26"
+    },
+    {
+      "index": 63,
+      "name": "에이케이엔터테인먼트(주)",
+      "category": "영화·방송 콘텐츠 제작·배급",
+      "industryDetail": "영화·드라마·다큐멘터리·예능·애니메이션 등의 콘텐츠 구매, 제작과 국내외 배급을 수행합니다.",
+      "status": "verified",
+      "sourceType": "official",
+      "sources": [
+        {
+          "url": "https://www.akent.co.kr/",
+          "title": "에이케이엔터테인먼트 공식 홈페이지",
+          "evidence": "영상 콘텐츠의 제작·구매·배급 사업과 SH드림타워 707호를 표기합니다."
+        }
+      ],
+      "matchBasis": "공식 회사명과 영문 주소의 SH Dream Tower 707호가 안내판과 일치합니다.",
+      "note": "",
+      "reviewedAt": "2026-10-26"
+    },
+    {
+      "index": 64,
+      "name": "(주)미래에",
+      "category": "업종 미확인",
+      "industryDetail": "동일 호실의 회사는 확인했으나 구체적인 영업 내용과 업종을 확인할 근거가 부족합니다.",
+      "status": "unverified",
+      "sourceType": "unverified",
+      "sources": [
+        {
+          "url": "https://moneypin.biz/bizno/detail/3978103782/",
+          "title": "미래에 사업자정보",
+          "evidence": "주식회사 미래에, 대표자 TAKAHASHI TAKAMITSU와 SH드림타워 708호를 기재합니다."
+        },
+        {
+          "url": "https://www.theteams.kr/teams/1077652",
+          "title": "미래에 기업소개",
+          "evidence": "동일 대표자·708호와 의류·패션·잡화·뷰티 및 자동차용품 서비스 분류가 있으나 회사 사업 설명은 비어 있습니다."
+        }
+      ],
+      "matchBasis": "법인명·대표자와 708호는 일치하나 공개 프로필의 서비스 분류만으로 실제 업종을 확정하기 어렵습니다.",
+      "note": "상호·708호·도로명 주소·사업자번호를 검색했습니다. 패션·자동차용품 관련 분류는 후보 정보로만 남겼습니다.",
+      "reviewedAt": "2026-10-26"
+    },
+    {
+      "index": 65,
+      "name": "(주)인스프로테크",
+      "category": "IT 인프라 구축·유지보수",
+      "industryDetail": "서버와 스토리지 등 전산장비를 구축하고 유지보수합니다.",
+      "status": "verified",
+      "sourceType": "business_directory",
+      "sources": [
+        {
+          "url": "https://www.jobkorea.co.kr/Recruit/GI_Read/49462576",
+          "title": "인스프로테크 전산장비 구축·유지보수 채용",
+          "evidence": "서버·스토리지 등 전산장비 업무와 SH드림타워 709호를 안내합니다."
+        },
+        {
+          "url": "https://www.jobkorea.co.kr/recruit/co_read/c/insprotech",
+          "title": "인스프로테크 기업정보",
+          "evidence": "회사명과 SH드림타워 709호 주소를 기재합니다."
+        }
+      ],
+      "matchBasis": "동일 법인명과 SH드림타워 709호가 기업정보·채용자료에서 일치합니다.",
+      "note": "",
+      "reviewedAt": "2026-10-26"
+    },
+    {
+      "index": 66,
+      "name": "위봄마케팅",
+      "category": "디지털 광고·퍼포먼스 마케팅",
+      "industryDetail": "검색·소셜 플랫폼의 광고를 기획·운영하며 콘텐츠 제작과 브랜드 마케팅을 제공합니다.",
+      "status": "verified",
+      "sourceType": "official",
+      "sources": [
+        {
+          "url": "https://www.webom.co.kr/",
+          "title": "위봄마케팅 공식 홈페이지",
+          "evidence": "구글·메타·틱톡·네이버 등 매체의 광고 운영과 브랜딩 마케팅 서비스를 소개합니다."
+        },
+        {
+          "url": "https://www.jobkorea.co.kr/Recruit/GI_Read/50163098",
+          "title": "위봄마케팅 콘텐츠 마케터 채용",
+          "evidence": "회사명과 SH드림타워 7층 710호 근무지를 안내합니다."
+        }
+      ],
+      "matchBasis": "공식 회사 소개와 동일 상호의 채용 근무지 710호를 대조했습니다.",
+      "note": "일부 이전 기업정보에는 가산 더블유센터 주소가 있으나 현재 검색되는 채용공고는 710호입니다.",
+      "reviewedAt": "2026-10-26"
+    },
+    {
+      "index": 67,
+      "name": "(주)아이알테크니카",
+      "category": "전열·난방필름 제조",
+      "industryDetail": "난방용 필름과 고객 맞춤형 필름히터를 개발·공급합니다.",
+      "status": "verified",
+      "sourceType": "official",
+      "sources": [
+        {
+          "url": "https://hiheat.co.kr/ko/customized-design-solutions/",
+          "title": "아이알테크니카 — 고객맞춤제품",
+          "evidence": "난방필름과 맞춤형 전열제품을 소개합니다."
+        },
+        {
+          "url": "https://capa.ai/factory/42904/%28%EC%A3%BC%29%EC%95%84%EC%9D%B4%EC%95%8C%ED%85%8C%ED%81%AC%EB%8B%88%EC%B9%B4",
+          "title": "캐파 — 아이알테크니카",
+          "evidence": "동일 상호와 가산디지털1로 205-15, 711호를 확인했습니다."
+        }
+      ],
+      "matchBasis": "공장정보의 상호·711호를 대조하고 동일 상호의 공식 제품 설명을 확인했습니다.",
+      "note": "",
+      "reviewedAt": "2026-10-26"
+    },
+    {
+      "index": 68,
+      "name": "(주)포엠아이텍",
+      "category": "네트워크장비·전자회로 개발",
+      "industryDetail": "PoE 스위치 등 네트워크장비, PCB 설계·SMT 및 전자파 시험 서비스를 제공합니다.",
+      "status": "verified",
+      "sourceType": "official",
+      "sources": [
+        {
+          "url": "https://www.4mitech.co.kr/",
+          "title": "포엠아이텍 공식 사이트",
+          "evidence": "네트워크장비·PCB·EMI/EMC 서비스와 SH드림타워 712호를 안내합니다."
+        }
+      ],
+      "matchBasis": "공식 사이트의 회사명·건물명·712호가 일치합니다.",
+      "note": "",
+      "reviewedAt": "2026-10-26"
+    },
+    {
+      "index": 69,
+      "name": "(주)마이다스에이치앤티",
+      "category": "업종 미확인",
+      "industryDetail": "공개 자료만으로 해당 입주사의 업종을 확정하지 못했습니다.",
+      "status": "unverified",
+      "sourceType": "unverified",
+      "sources": [
+        {
+          "url": "https://www.jobkorea.co.kr/company/43323327/info",
+          "title": "잡코리아 — 마이다스에이치앤티",
+          "evidence": "동명 기업의 전자 감지장치 제조업 분류를 확인했습니다."
+        }
+      ],
+      "matchBasis": "상호와 SH드림타워 주소·호실을 대조했으나 확인 근거가 부족합니다.",
+      "note": "상호·가산·SH드림타워·713호·주소로 양 검색엔진을 조회했습니다. 압력센서·헬스케어 기기 기업 후보는 있으나 포항 소재 자료만 확인되어 해당 호실과의 연결을 확정하지 않았습니다.",
+      "reviewedAt": "2026-10-26"
+    },
+    {
+      "index": 70,
+      "name": "진산회계법인",
+      "category": "회계·세무 서비스",
+      "industryDetail": "회계 및 세무 관련 전문 서비스를 제공합니다.",
+      "status": "verified",
+      "sourceType": "official",
+      "sources": [
+        {
+          "url": "https://jinsanac.co.kr/bbs/board.php?tbl=bbs11",
+          "title": "진산회계법인 가산",
+          "evidence": "회계법인 소개와 SH드림타워 601호 사무실을 안내합니다."
+        }
+      ],
+      "matchBasis": "공식 사이트에서 법인명과 가산 사무실 601호를 대조했습니다.",
+      "note": "",
+      "reviewedAt": "2026-10-26"
+    },
+    {
+      "index": 71,
+      "name": "파르마스토어",
+      "category": "업종 미확인",
+      "industryDetail": "공개 자료만으로 해당 입주사의 업종을 확정하지 못했습니다.",
+      "status": "unverified",
+      "sourceType": "unverified",
+      "sources": [],
+      "matchBasis": "상호와 SH드림타워 주소·호실을 대조했으나 확인 근거가 부족합니다.",
+      "note": "파르마스토어 단독명·가산·602호로 양 검색엔진을 조회했습니다. 온라인 판매자 후보가 있으나 SH드림타워 주소와 연결되는 자료가 없습니다.",
+      "reviewedAt": "2026-10-26"
+    },
+    {
+      "index": 72,
+      "name": "써니베일 코리아",
+      "category": "주문제작 잡화·전자상거래",
+      "industryDetail": "사진자석, 각인 팔찌와 반려동물 인식표 등 주문제작 상품을 판매합니다.",
+      "status": "verified",
+      "sourceType": "official",
+      "sources": [
+        {
+          "url": "https://sorafactory.co.kr/",
+          "title": "소라팩토리 — 써니베일 코리아",
+          "evidence": "주문제작 잡화 판매와 운영사 써니베일 코리아, SH드림타워 603호를 표시합니다."
+        }
+      ],
+      "matchBasis": "공식 쇼핑몰 사업자정보의 상호·603호가 일치합니다.",
+      "note": "",
+      "reviewedAt": "2026-10-26"
+    },
+    {
+      "index": 73,
+      "name": "(주)위캐스트",
+      "category": "미디어 소프트웨어·디지털사이니지",
+      "industryDetail": "미디어 통합 플랫폼과 디지털사이니지, 영상회의·웨비나 관련 솔루션을 제공합니다.",
+      "status": "verified",
+      "sourceType": "official",
+      "sources": [
+        {
+          "url": "https://wecast.co.kr/company",
+          "title": "위캐스트 — 회사소개",
+          "evidence": "미디어 통합 플랫폼 사업과 SH드림타워 604호를 안내합니다."
+        },
+        {
+          "url": "https://www.wecast.co.kr/service",
+          "title": "위캐스트 — 서비스",
+          "evidence": "디지털사이니지와 웹·앱 방송, 영상회의 서비스 등을 소개합니다."
+        }
+      ],
+      "matchBasis": "공식 회사소개에서 회사명과 604호가 일치합니다.",
+      "note": "",
+      "reviewedAt": "2026-10-26"
+    },
+    {
+      "index": 74,
+      "name": "(주)코비즈워드",
+      "category": "경영컨설팅",
+      "industryDetail": "기업의 성장 단계에 따른 경영 자문 서비스를 제공합니다.",
+      "status": "verified",
+      "sourceType": "business_directory",
+      "sources": [
+        {
+          "url": "https://moneypin.biz/bizno/detail/2728103765/",
+          "title": "머니핀 — 주식회사 코비즈위드",
+          "evidence": "경영 컨설팅업 및 가산디지털1로 205-15, 607·608호를 표시합니다."
+        },
+        {
+          "url": "https://jlab.incruit.com/inc/1476258932",
+          "title": "인크루트 — 코비즈위드",
+          "evidence": "창업부터 인수합병·상장까지 성장 단계별 기업 자문을 소개합니다."
+        }
+      ],
+      "matchBasis": "안내판 표기와 유사한 상호의 사업자정보에서 607·608호가 모두 일치합니다.",
+      "note": "",
+      "reviewedAt": "2026-10-26",
+      "nameCorrectionCandidate": "(주)코비즈위드"
+    },
+    {
+      "index": 75,
+      "name": "(주)이루어",
+      "category": "광고대행",
+      "industryDetail": "광고대행업으로 등록된 기업이며 동의콜·인바운드·아웃바운드 상담 인력을 채용합니다.",
+      "status": "verified",
+      "sourceType": "business_directory",
+      "sources": [
+        {
+          "url": "https://www.jobkorea.co.kr/Recruit/GI_Read/50132454",
+          "title": "잡코리아 — 이루어 채용",
+          "evidence": "기업 업종은 광고대행업이고 사업장과 근무지를 SH드림타워 609호로 표시합니다."
+        }
+      ],
+      "matchBasis": "채용공고의 회사명·사업장·609호가 일치합니다.",
+      "note": "채용공고의 기업 업종 분류 기준입니다.",
+      "reviewedAt": "2026-10-26"
+    },
+    {
+      "index": 76,
+      "name": "(주)쇼엠",
+      "category": "광고·마케팅",
+      "industryDetail": "온라인 광고 및 마케팅 솔루션을 제공합니다.",
+      "status": "verified",
+      "sourceType": "official",
+      "sources": [
+        {
+          "url": "https://showm.kr/sub7.php",
+          "title": "쇼엠 — 회사소개",
+          "evidence": "마케팅 솔루션 사업과 SH드림타워 610호 지점을 안내합니다."
+        }
+      ],
+      "matchBasis": "공식 사이트의 쇼엠 지점 주소가 610호와 일치합니다.",
+      "note": "",
+      "reviewedAt": "2026-10-26"
+    },
+    {
+      "index": 77,
+      "name": "(주)비스아이티",
+      "category": "IT 시스템·솔루션",
+      "industryDetail": "IT 통합 솔루션과 관련 서비스를 제공합니다.",
+      "status": "verified",
+      "sourceType": "business_directory",
+      "sources": [
+        {
+          "url": "https://www.saramin.co.kr/zf_user/company-info/view/csn/ZDl6YXBWS081bXV4WnNBMFhjMUFsQT09/company_nm/%28%EC%A3%BC%29%EB%B9%84%EC%8A%A4%EC%95%84%EC%9D%B4%ED%8B%B0",
+          "title": "사람인 — 비스아이티",
+          "evidence": "IT 통합 솔루션 사업 설명과 SH드림타워 611호를 확인했습니다."
+        }
+      ],
+      "matchBasis": "기업정보의 상호·주소·611호가 일치합니다.",
+      "note": "",
+      "reviewedAt": "2026-10-26"
+    },
+    {
+      "index": 78,
+      "name": "(주)원웨이컴퍼니",
+      "category": "컴퓨터·소프트웨어 도매",
+      "industryDetail": "채용기업 정보에서 컴퓨터·주변장치·소프트웨어 도매업으로 분류됩니다.",
+      "status": "verified",
+      "sourceType": "business_directory",
+      "sources": [
+        {
+          "url": "https://m.jobkorea.co.kr/Recruit/GI_Read/47299520",
+          "title": "잡코리아 — 원웨이컴퍼니 채용",
+          "evidence": "근무지는 SH드림타워 612호이며 기업 업종은 컴퓨터·주변장치·소프트웨어 도매업으로 표시합니다."
+        }
+      ],
+      "matchBasis": "상호와 채용공고의 근무지 612호가 일치합니다.",
+      "note": "기업정보 주소는 가산더블유센터이며 공고 근무지만 612호입니다. 채용 직무는 동의 TM으로, 주력 사업은 추가 확인이 필요합니다.",
+      "reviewedAt": "2026-10-26"
+    },
+    {
+      "index": 79,
+      "name": "(주)쿼드",
+      "category": "종합도매·연구개발",
+      "industryDetail": "전자기기·의류 도소매와 연구개발, 디자인 등의 사업을 등록하고 있습니다.",
+      "status": "verified",
+      "sourceType": "business_directory",
+      "sources": [
+        {
+          "url": "https://www.saramin.co.kr/zf_user/company-info/view/csn/TEZYTmhvNmVaV1VpaFdOVldINHJZUT09/company_nm/%28%EC%A3%BC%29%EC%BF%BC%EB%93%9C",
+          "title": "사람인 — 쿼드",
+          "evidence": "상품 종합 도매업 분류, 사업내용과 SH드림타워 613호를 확인했습니다."
+        }
+      ],
+      "matchBasis": "NICE 출처 기업정보의 상호·613호가 일치합니다.",
+      "note": "",
+      "reviewedAt": "2026-10-26"
+    },
+    {
+      "index": 80,
+      "name": "(주)펫토웍스",
+      "category": "정보보안 연구·컨설팅",
+      "industryDetail": "보안 취약점 분석과 연구, 컴퓨터 시스템 관련 자문을 수행합니다.",
+      "status": "verified",
+      "sourceType": "official",
+      "sources": [
+        {
+          "url": "https://peto.works/contact",
+          "title": "PetoWorks — Contact",
+          "evidence": "보안 취약점 분석·연구 사업과 SH드림타워 614호를 안내합니다."
+        },
+        {
+          "url": "https://www.incruit.com/companies/1475699962",
+          "title": "인크루트 — 페토웍스",
+          "evidence": "페토웍스의 컴퓨터 시스템 통합자문 사업, 동일 614호와 peto.works 홈페이지를 표시합니다."
+        },
+        {
+          "url": "https://lab.incruit.com/jobs/2609300004161",
+          "title": "인크루트 — 글리치제로 / 페토웍스 정보보안 채용",
+          "evidence": "한 채용공고에 글리치제로와 주식회사 페토웍스를 함께 표시하고 정보보안 취약점 연구 업무를 설명합니다."
+        }
+      ],
+      "matchBasis": "페토웍스 기업정보의 614호·공식 도메인과 공식 연락처 주소가 일치하며, 인크루트 단일 채용공고에서 글리치제로와 페토웍스 명칭이 병기됩니다.",
+      "note": "공식 사이트의 현재 법인 표기는 글리치제로이며 페토웍스와 함께 표시되는 채용자료를 확인했습니다. 상호 변경 시점은 확인하지 못했습니다.",
+      "reviewedAt": "2026-10-26",
+      "nameCorrectionCandidate": "(주)페토웍스"
+    },
+    {
+      "index": 81,
+      "name": "정성관세사무소",
+      "category": "관세·통관 서비스",
+      "industryDetail": "관세사 업무와 수출입 통관 관련 서비스를 제공합니다.",
+      "status": "verified",
+      "sourceType": "business_directory",
+      "sources": [
+        {
+          "url": "https://moneypin.biz/bizno/detail/1212119984/",
+          "title": "머니핀 — 정성관세사무소",
+          "evidence": "관세사 업종과 동일 상호, 가산디지털1로 205-15, 615호를 확인했습니다."
+        }
+      ],
+      "matchBasis": "상호와 사업자정보의 615호가 일치합니다.",
+      "note": "",
+      "reviewedAt": "2026-10-26"
+    },
+    {
+      "index": 82,
+      "name": "디코코리아(주)",
+      "category": "전시·행사 공간디자인",
+      "industryDetail": "전시·컨벤션·브랜드 행사를 위한 공간 디자인과 시공·운영 서비스를 제공합니다.",
+      "status": "verified",
+      "sourceType": "official",
+      "sources": [
+        {
+          "url": "https://www.dkor.co.kr/about",
+          "title": "디코코리아 — About",
+          "evidence": "전시·행사 공간 기획·디자인·시공 사업과 SH드림타워 501호를 안내합니다."
+        }
+      ],
+      "matchBasis": "공식 사이트의 회사명·501호가 일치합니다.",
+      "note": "",
+      "reviewedAt": "2026-10-26"
+    },
+    {
+      "index": 83,
+      "name": "(주)이그닉스",
+      "category": "디스플레이·IT기기 유통",
+      "industryDetail": "모니터와 IT 주변기기 등을 온라인으로 판매합니다.",
+      "status": "verified",
+      "sourceType": "official",
+      "sources": [
+        {
+          "url": "https://stores.auction.co.kr/ignixx",
+          "title": "옥션 이그닉스 공식 판매점",
+          "evidence": "디스플레이·IT 주변기기 판매점이며 판매자 사업자정보의 이그닉스와 502호를 확인했습니다."
+        }
+      ],
+      "matchBasis": "판매자 사업자정보의 법인명과 가산동 459-6, 502호가 일치합니다.",
+      "note": "",
+      "reviewedAt": "2026-10-26"
+    },
+    {
+      "index": 84,
+      "name": "삼일티에스",
+      "category": "업종 미확인",
+      "industryDetail": "공개 자료만으로 해당 입주사의 업종을 확정하지 못했습니다.",
+      "status": "unverified",
+      "sourceType": "unverified",
+      "sources": [
+        {
+          "url": "https://www.saramin.co.kr/zf_user/company-info/view/csn/eTBHUXdDYVl2TTJDbHFGUS9pdWRXQT09/company_nm/%28%EC%A3%BC%29%EC%82%BC%EC%9D%BC%ED%8B%B0%EC%97%90%EC%8A%A4",
+          "title": "사람인 — 삼일티에스",
+          "evidence": "동명 법인 주소는 가산디지털1로 205-27로, 대상 건물과 다릅니다."
+        }
+      ],
+      "matchBasis": "상호와 SH드림타워 주소·호실을 대조했으나 확인 근거가 부족합니다.",
+      "note": "상호·주소·503호·대표자 후보를 양 검색엔진에서 대조했습니다. 섬유제조 법인과 패션·섬유 디자인 개인사업자가 구분되어 동일 입주사를 확정하지 못했습니다.",
+      "reviewedAt": "2026-10-26"
+    },
+    {
+      "index": 85,
+      "name": "(주)더유",
+      "category": "화물운송·물류주선",
+      "industryDetail": "국내외 화물운송과 배차·물류주선 서비스를 제공합니다.",
+      "status": "verified",
+      "sourceType": "official",
+      "sources": [
+        {
+          "url": "https://www.the-u.co.kr/common/company.pdf?v=2",
+          "title": "더유 — 회사소개서",
+          "evidence": "운송·물류주선 사업과 서울사무소 SH드림타워 504호를 안내합니다."
+        }
+      ],
+      "matchBasis": "공식 회사소개서의 더유 서울사무소 504호가 일치합니다.",
+      "note": "",
+      "reviewedAt": "2026-10-26"
+    },
+    {
+      "index": 86,
+      "name": "현택스세무회계",
+      "category": "세무·회계 서비스",
+      "industryDetail": "세무 및 회계 관련 서비스를 제공합니다.",
+      "status": "verified",
+      "sourceType": "business_directory",
+      "sources": [
+        {
+          "url": "https://www.saramin.co.kr/zf_user/company-info/view/csn/cU53RE5nWm5BQ3o5RHRYOXRhNzFwdz09/company_nm/%ED%98%84%ED%83%9D%EC%8A%A4%EC%84%B8%EB%AC%B4%ED%9A%8C%EA%B3%84",
+          "title": "사람인 — 현택스세무회계",
+          "evidence": "세무·회계 업종과 가산디지털1로 205-15 주소를 표시합니다."
+        }
+      ],
+      "matchBasis": "상호와 건물 도로명주소가 일치합니다.",
+      "note": "웹 기업정보에는 호실이 생략되어 있습니다. 안양 소재 동명 자료와 구분했습니다.",
+      "reviewedAt": "2026-10-26"
+    },
+    {
+      "index": 87,
+      "name": "(주)이루디자인",
+      "category": "가구 제조",
+      "industryDetail": "기타 가구 제조업으로 분류된 기업입니다.",
+      "status": "verified",
+      "sourceType": "business_directory",
+      "sources": [
+        {
+          "url": "https://www.saramin.co.kr/zf_user/company-info/view/csn/ZHhZa0pTQVJTcTVySXllTU1oZnU1dz09/company_nm/%28%EC%A3%BC%29%EC%9D%B4%ED%88%AC%EB%94%94%EC%9E%90%EC%9D%B8",
+          "title": "사람인 — 이투디자인",
+          "evidence": "가구 제조업과 SH드림타워 506호를 확인했습니다."
+        }
+      ],
+      "matchBasis": "유사 표기인 이투디자인의 회사 주소가 506호까지 일치합니다.",
+      "note": "",
+      "reviewedAt": "2026-10-26",
+      "nameCorrectionCandidate": "(주)이투디자인"
+    },
+    {
+      "index": 88,
+      "name": "(주)가미쇼보코리아",
+      "category": "업종 미확인",
+      "industryDetail": "공개 자료만으로 해당 입주사의 업종을 확정하지 못했습니다.",
+      "status": "unverified",
+      "sourceType": "unverified",
+      "sources": [
+        {
+          "url": "https://sj.hospitalk.net/workplaces.php?industry=58113&page=3",
+          "title": "고용·산재보험 가입 사업장 자료 — 일반 서적 출판업",
+          "evidence": "가미쇼보코리아와 대상 건물 도로명주소를 표시하는 재가공 자료입니다."
+        },
+        {
+          "url": "https://www.saramin.co.kr/zf_user/company-info/view/csn/eXd0OEgyamZ1b1BhYzhPT25KWXBmQT09/company_nm/%28%EC%A3%BC%29%EA%B0%80%EB%AF%B8%EC%87%BC%EB%B3%B4%EC%BD%94%EB%A6%AC%EC%95%84",
+          "title": "사람인 — 가미쇼보코리아",
+          "evidence": "공개 기업정보의 주소는 가산디지털1로 168, B동610호입니다."
+        }
+      ],
+      "matchBasis": "상호와 SH드림타워 주소·호실을 대조했으나 확인 근거가 부족합니다.",
+      "note": "상호·주소·507호·459-6으로 양 검색엔진을 조회했습니다. 미용 전문 출판사 후보와 대상 건물을 표시한 재가공 자료는 있으나 공식·주요 기업정보 주소가 달라 동일 입주사 연결을 보류했습니다.",
+      "reviewedAt": "2026-10-26"
+    },
+    {
+      "index": 89,
+      "name": "(주)나무홈케어",
+      "category": "시설관리 서비스",
+      "industryDetail": "시설관리 분야의 사업을 운영하며 고객상담 직원을 채용합니다.",
+      "status": "verified",
+      "sourceType": "business_directory",
+      "sources": [
+        {
+          "url": "https://www.jobkorea.co.kr/Recruit/GI_Read/50158802",
+          "title": "잡코리아 — 나무홈케어 채용",
+          "evidence": "시설관리·보안·경비 업종과 가산디지털1로 205-15, 508호를 표시합니다."
+        }
+      ],
+      "matchBasis": "공고의 법인명·508호가 일치합니다.",
+      "note": "확인된 기업 분류 범위만 반영했으며 세부 홈케어 품목은 확인하지 못했습니다.",
+      "reviewedAt": "2026-10-26"
+    },
+    {
+      "index": 90,
+      "name": "(주)엑소레날",
+      "category": "의료기기 제조",
+      "industryDetail": "의료용 기기를 개발·제조하며 인허가·품질관리 및 펌웨어 관련 인력을 채용합니다.",
+      "status": "verified",
+      "sourceType": "business_directory",
+      "sources": [
+        {
+          "url": "https://www.saramin.co.kr/zf_user/company-info/view?csn=UGRNdXhtVWp5V2d5Wk82WFJLZDBLQT09&popup_yn=y",
+          "title": "사람인 — 엑소레날",
+          "evidence": "법인명과 SH드림타워 509·510·511호를 확인했습니다."
+        },
+        {
+          "url": "https://www.jobkorea.co.kr/Recruit/GI_Read/48658408",
+          "title": "잡코리아 — 엑소레날 채용",
+          "evidence": "의료용 기기 제조업 분류와 해당 건물 근무지, 의료기기 인허가 업무를 확인했습니다."
+        }
+      ],
+      "matchBasis": "기업정보의 상호와 509·510·511호가 모두 일치합니다.",
+      "note": "",
+      "reviewedAt": "2026-10-26"
+    },
+    {
+      "index": 91,
+      "name": "(주)더봄시스템",
+      "category": "LED 전광판 제조",
+      "industryDetail": "행사·시설용 LED 전광판과 미디어월을 제조합니다.",
+      "status": "verified",
+      "sourceType": "business_directory",
+      "sources": [
+        {
+          "url": "https://ifactoryhub.com/%EC%84%9C%EC%9A%B8%EC%8B%9C-%EC%A1%B0%EB%AA%85%EA%B3%B5%EC%9E%A5-%EB%A6%AC%EC%8A%A4%ED%8A%B8/",
+          "title": "공장허브 — 서울시 조명공장 목록",
+          "evidence": "더불시스템의 SH드림타워 512호 공장과 LED 전광판 생산품을 확인했습니다."
+        }
+      ],
+      "matchBasis": "유사 표기인 더불시스템의 공장주소가 512호까지 일치합니다.",
+      "note": "",
+      "reviewedAt": "2026-10-26",
+      "nameCorrectionCandidate": "(주)더불시스템"
+    },
+    {
+      "index": 92,
+      "name": "이움미디어(주)",
+      "category": "영상·LED 디스플레이 솔루션",
+      "industryDetail": "LED 디스플레이 설치, 영상 시스템 설계, 장비 공급·대여 및 유지보수를 제공합니다.",
+      "status": "verified",
+      "sourceType": "official",
+      "sources": [
+        {
+          "url": "https://leum.kr/",
+          "title": "이음미디어 — Premium Media Solution",
+          "evidence": "영상·LED 솔루션 사업과 SH드림타워 513호 쇼룸을 안내합니다."
+        }
+      ],
+      "matchBasis": "공식 사이트의 쇼룸 주소가 513호까지 일치합니다.",
+      "note": "",
+      "reviewedAt": "2026-10-26",
+      "nameCorrectionCandidate": "이음미디어(주)"
+    },
+    {
+      "index": 93,
+      "name": "비베네",
+      "category": "온라인 광고·마케팅",
+      "industryDetail": "온라인 마케팅 서비스를 제공합니다.",
+      "status": "verified",
+      "sourceType": "business_directory",
+      "sources": [
+        {
+          "url": "https://www.albamon.com/jobs/detail-company/bR3EXeGkRVYnC6mrBP6nMQ%3D%3D",
+          "title": "알바몬 — 비베네(BBene)",
+          "evidence": "온라인 마케팅 사업과 SH드림타워 514호를 확인했습니다."
+        }
+      ],
+      "matchBasis": "기업명과 회사주소 514호가 일치합니다.",
+      "note": "",
+      "reviewedAt": "2026-10-26"
+    },
+    {
+      "index": 94,
+      "name": "한국중소기업자문센터",
+      "category": "경영컨설팅",
+      "industryDetail": "기업 대상 경영자문 및 컨설팅 서비스를 제공합니다.",
+      "status": "verified",
+      "sourceType": "business_directory",
+      "sources": [
+        {
+          "url": "https://www.jobkorea.co.kr/Recruit/GI_Read/50172731",
+          "title": "잡코리아 — 한국중소기업 경영자문센터",
+          "evidence": "컨설팅 업종과 SH드림타워 515호 근무지를 표시합니다."
+        }
+      ],
+      "matchBasis": "상호의 핵심 명칭과 채용 근무지 515호가 일치합니다.",
+      "note": "채용공고의 전체 상호는 '한국중소기업 경영자문센터'입니다. 공공기관이라는 의미는 아닙니다.",
+      "reviewedAt": "2026-10-26",
+      "nameCorrectionCandidate": "한국중소기업 경영자문센터"
+    },
+    {
+      "index": 95,
+      "name": "와이즈와이어즈(주)",
+      "category": "소프트웨어 시험·품질검증",
+      "industryDetail": "소프트웨어 테스트와 품질보증 서비스를 제공하며 가산 모빌리티센터를 운영합니다.",
+      "status": "verified",
+      "sourceType": "official",
+      "sources": [
+        {
+          "url": "https://www.wisewires.com/about.html",
+          "title": "와이즈와이어즈 — About",
+          "evidence": "소프트웨어 품질·테스트 사업과 가산 모빌리티센터 401~402호를 안내합니다."
+        }
+      ],
+      "matchBasis": "공식 회사소개에 대상 도로명주소와 401~402호가 명시되어 있습니다.",
+      "note": "",
+      "reviewedAt": "2026-10-26"
+    },
+    {
+      "index": 96,
+      "name": "(주)아이티알솔루션",
+      "category": "업종 미확인",
+      "industryDetail": "공개 자료만으로 해당 입주사의 업종을 확정하지 못했습니다.",
+      "status": "unverified",
+      "sourceType": "unverified",
+      "sources": [
+        {
+          "url": "https://itrsolution.helloweb.co.kr/company",
+          "title": "아이티알솔루션 — 회사소개",
+          "evidence": "동명 기업은 유통정보 분야 IT 서비스를 소개하지만 대상 호실 연결 근거는 없습니다."
+        }
+      ],
+      "matchBasis": "상호와 SH드림타워 주소·호실을 대조했으나 확인 근거가 부족합니다.",
+      "note": "상호·가산·SH드림타워·403호·주소로 양 검색엔진을 조회했습니다. 공식 사이트와 사업자정보는 강서구 주소이며 SH드림타워 입주사와의 연결을 확인하지 못했습니다.",
+      "reviewedAt": "2026-10-26"
+    },
+    {
+      "index": 97,
+      "name": "시큐리티플랫폼(주)",
+      "category": "보안·통신장비 제조",
+      "industryDetail": "CCTV 카메라, 영상감시장치와 보안통신장비를 제조합니다.",
+      "status": "verified",
+      "sourceType": "business_directory",
+      "sources": [
+        {
+          "url": "https://capa.ai/factory/158439/%EC%8B%9C%ED%81%90%EB%A6%AC%ED%8B%B0%ED%94%8C%EB%9E%AB%ED%8F%BC%28%EC%A3%BC%29",
+          "title": "캐파 — 시큐리티플랫폼",
+          "evidence": "409호 공장주소와 CCTV·영상감시·보안통신장비 생산품을 확인했습니다."
+        }
+      ],
+      "matchBasis": "회사명과 공장주소 409호가 일치합니다.",
+      "note": "제조사업장 기준의 확인이며 404호는 별도 웹 자료를 확인하지 못했습니다.",
+      "reviewedAt": "2026-10-26"
+    },
+    {
+      "index": 98,
+      "name": "세무법인혜움 이슬점",
+      "category": "업종 미확인",
+      "industryDetail": "공개 자료만으로 해당 입주사의 업종을 확정하지 못했습니다.",
+      "status": "unverified",
+      "sourceType": "unverified",
+      "sources": [
+        {
+          "url": "https://www.heumtax.com/branch",
+          "title": "세무법인 혜움 — 지점 소개",
+          "evidence": "유사명 이솔점의 현재 주소는 가산어반워크1 433호입니다."
+        }
+      ],
+      "matchBasis": "상호와 SH드림타워 주소·호실을 대조했으나 확인 근거가 부족합니다.",
+      "note": "이슬점·이솔점·405호·SH드림타워를 양 검색엔진에서 대조했습니다. '이솔점' 후보는 있으나 공식 현주소가 달라 동일 사무소 확인과 사진 표기 재확인이 필요합니다.",
+      "reviewedAt": "2026-10-26"
+    },
+    {
+      "index": 99,
+      "name": "케이와이컴퍼니",
+      "category": "통신판매·텔레마케팅",
+      "industryDetail": "통신판매 사업과 전화상담·아웃바운드 마케팅 업무를 운영합니다.",
+      "status": "verified",
+      "sourceType": "business_directory",
+      "sources": [
+        {
+          "url": "https://www.albamon.com/jobs/detail/119708726",
+          "title": "알바몬 — 케이와이컴퍼니 / KY리드마케팅",
+          "evidence": "사업내용은 통신판매이며 SH드림타워 407호에서 텔레마케터를 모집합니다."
+        }
+      ],
+      "matchBasis": "공고의 기업정보가 케이와이컴퍼니이며 근무지 주소가 407호와 일치합니다.",
+      "note": "기업 등록주소는 부천이며 해당 공고의 근무지가 SH드림타워 407호입니다.",
+      "reviewedAt": "2026-10-26"
+    },
+    {
+      "index": 100,
+      "name": "위드컴퍼니",
+      "category": "방송·광고",
+      "industryDetail": "방송 프로그램 기업 섭외와 광고·홍보 영업 업무를 운영하는 방송·프로덕션 분야 기업.",
+      "status": "verified",
+      "sourceType": "business_directory",
+      "sources": [
+        {
+          "url": "https://www.jobkorea.co.kr/Recruit/GI_Read/50097901",
+          "title": "위드컴퍼니 방송 프로그램 기업섭외 영업 담당자 채용",
+          "evidence": "방송·케이블·프로덕션 업종과 SH드림타워 408호 근무지가 함께 기재됨."
+        }
+      ],
+      "matchBasis": "상호와 SH드림타워 408호 근무지가 안내판과 일치.",
+      "note": "채용공고의 근무지 기준이며 별도 기업정보의 본사 주소는 다름.",
+      "reviewedAt": "2026-10-26"
+    },
+    {
+      "index": 101,
+      "name": "카카오토",
+      "category": "업종 미확인",
+      "industryDetail": "입주기업과 연결되는 업종 근거를 확인하지 못함.",
+      "status": "unverified",
+      "sourceType": "unverified",
+      "sources": [],
+      "matchBasis": "상호·SH드림타워·도로명·410호 조합으로 두 검색엔진에서 검색했으나 일치 자료 없음.",
+      "note": "동명 자동차 관련 업체와 쇼핑몰 결과가 있으나 주소가 일치하지 않아 채택하지 않음.",
+      "reviewedAt": "2026-10-26"
+    },
+    {
+      "index": 102,
+      "name": "블랙록스",
+      "category": "디지털 마케팅",
+      "industryDetail": "크립토·글로벌 마케팅과 온라인 미디어 및 디지털 플랫폼 서비스를 제공.",
+      "status": "verified",
+      "sourceType": "official",
+      "sources": [
+        {
+          "url": "https://blacklocks.cloud/",
+          "title": "BLACKLOCKS 공식 사이트",
+          "evidence": "크립토 마케팅·글로벌 마케팅 및 플랫폼 사업 소개와 SH드림타워 411호 주소 확인."
+        }
+      ],
+      "matchBasis": "공식 사이트의 상호와 4층 411호가 일치.",
+      "note": "",
+      "reviewedAt": "2026-10-26"
+    },
+    {
+      "index": 103,
+      "name": "(주)퓨텍",
+      "category": "소프트웨어·SI",
+      "industryDetail": "소프트웨어 솔루션과 시스템 통합 분야에서 공공사업 및 국가 연구개발 사업을 수행.",
+      "status": "verified",
+      "sourceType": "official",
+      "sources": [
+        {
+          "url": "https://futek.co.kr/organization/",
+          "title": "퓨텍 조직도",
+          "evidence": "공식 사이트에 연구소 주소가 가산디지털1로 205-15, 412호로 기재됨."
+        },
+        {
+          "url": "https://www.jobkorea.co.kr/Recruit/GI_Read/49934030?Oem_Code=C1&listno=251&logpath=1&stext=%EC%A0%9C%EC%95%88+%EC%A0%84%EB%9E%B5",
+          "title": "퓨텍 공공사업부 R&D 사업관리 채용",
+          "evidence": "솔루션·SI·CRM·ERP 업종이며 SH드림타워 412~414호 사업장으로 안내."
+        }
+      ],
+      "matchBasis": "공식 연구소 주소 412호 및 채용공고의 412~414호가 안내판의 412·413호와 연결됨.",
+      "note": "일부 공고의 대표 근무지 표시는 414호이나 본문에 412~414호가 기재됨.",
+      "reviewedAt": "2026-10-26"
+    },
+    {
+      "index": 104,
+      "name": "(주)두진아이앤티",
+      "category": "운송장비 부품·기술자문",
+      "industryDetail": "철도차량 부품 공급과 신뢰성·가용성·유지보수성·안전성 관련 기술자문을 제공.",
+      "status": "verified",
+      "sourceType": "business_directory",
+      "sources": [
+        {
+          "url": "https://www.saramin.co.kr/zf_user/company-info/view/csn/eThKbi9mRlZJRmdqbm5SNU9wQklTZz09/company_nm/%28%EC%A3%BC%29%EB%91%90%EC%A7%84%EC%95%84%EC%9D%B4%EC%95%A4%ED%8B%B0",
+          "title": "두진아이앤티 기업정보",
+          "evidence": "414호 주소, 철도차량 부품 및 RAMS 컨설팅 사업 소개를 확인."
+        }
+      ],
+      "matchBasis": "법인명과 SH드림타워 414호 일치.",
+      "note": "기업정보의 등록 업종은 자동차용 전용 신품 부품 판매업이며, 표시 분류는 소개된 실제 사업내용을 함께 반영.",
+      "reviewedAt": "2026-10-26"
+    },
+    {
+      "index": 105,
+      "name": "(주)에이아이플로우",
+      "category": "시스템 소프트웨어 개발",
+      "industryDetail": "시스템 소프트웨어를 개발·공급하며 의료기기 제품 시험·검증 관련 인력을 채용.",
+      "status": "verified",
+      "sourceType": "business_directory",
+      "sources": [
+        {
+          "url": "https://www.jobkorea.co.kr/Recruit/GI_Read/50005365?Oem_Code=C1&listno=11&logpath=1&sc=630&stext=C+PROTOCOL",
+          "title": "에이아이플로우 제품 시험·검증 채용",
+          "evidence": "시스템 소프트웨어 개발 및 공급업과 SH드림타워 415호 근무지 기재."
+        }
+      ],
+      "matchBasis": "법인명과 415호 일치.",
+      "note": "",
+      "reviewedAt": "2026-10-26"
+    },
+    {
+      "index": 106,
+      "name": "(주)동천",
+      "category": "광고·리워드 플랫폼",
+      "industryDetail": "광고 미션 참여로 포인트를 적립하고 제휴 앱에서 사용하는 AsOne 플랫폼을 운영.",
+      "status": "verified",
+      "sourceType": "official",
+      "sources": [
+        {
+          "url": "https://www.asonedc.com/",
+          "title": "AsOne · 주식회사 동천",
+          "evidence": "광고 리워드 플랫폼 소개와 동천 법인명, 사업자번호, SH드림타워 301호 주소 확인."
+        }
+      ],
+      "matchBasis": "공식 사이트의 법인명과 301호가 일치하며 사업자번호 658-86-03076로 공개 기업정보와 대조.",
+      "note": "다른 기업정보에 과거 건축자재 도매업 분류도 있어 현재 공식 서비스 소개를 우선함.",
+      "reviewedAt": "2026-10-26"
+    },
+    {
+      "index": 107,
+      "name": "범블비",
+      "category": "시각·전문디자인",
+      "industryDetail": "시각 디자인 및 전문 디자인 서비스를 제공.",
+      "status": "verified",
+      "sourceType": "business_directory",
+      "sources": [
+        {
+          "url": "https://www.saramin.co.kr/zf_user/company-info/view/csn/V0NOVmYxdHZhcFVVdDE2YmZPWko0Zz09/company_nm/%EB%B2%94%EB%B8%94%EB%B9%84",
+          "title": "범블비 기업정보",
+          "evidence": "시각 디자인업과 디자인·전문 디자인 사업, 303호 주소를 확인."
+        }
+      ],
+      "matchBasis": "상호와 SH드림타워 303호 일치.",
+      "note": "",
+      "reviewedAt": "2026-10-26"
+    },
+    {
+      "index": 108,
+      "name": "(주)혜성안전기술원",
+      "category": "토목 안전진단",
+      "industryDetail": "토목시설 안전진단 현장 업무와 관련 기술 서비스를 수행.",
+      "status": "verified",
+      "sourceType": "business_directory",
+      "sources": [
+        {
+          "url": "https://www.dongnealba.com/job-ad/686626e0305681b869cd20ff",
+          "title": "혜성안전기술원 현장 보조인력 채용",
+          "evidence": "사업주가 안전진단업체로 소개하며 토목 안전진단업 및 가산디지털1로 205-15 주소를 기재."
+        }
+      ],
+      "matchBasis": "동일 상호의 사업주 공고에 SH드림타워 도로명 주소가 기재됨.",
+      "note": "공고에는 호실이 없어 304호 자체는 안내판을 기준으로 유지.",
+      "reviewedAt": "2026-10-26"
+    },
+    {
+      "index": 109,
+      "name": "(주)업메이트",
+      "category": "광고·마케팅",
+      "industryDetail": "광고대행을 중심으로 소프트웨어 개발과 시스템 통합 관련 사업도 제공.",
+      "status": "verified",
+      "sourceType": "business_directory",
+      "sources": [
+        {
+          "url": "https://www.saramin.co.kr/zf_user/company-info/view/csn/dHUramZ3bHlYRHZLRUZzendySWF3QT09/company_nm/%28%EC%A3%BC%29%EC%97%85%EB%A9%94%EC%9D%B4%ED%8A%B8",
+          "title": "업메이트 기업정보",
+          "evidence": "광고대행업 및 소프트웨어·SI 사업내용, 305·306호 주소 기재."
+        }
+      ],
+      "matchBasis": "법인명과 305·306호가 모두 일치.",
+      "note": "",
+      "reviewedAt": "2026-10-26"
+    },
+    {
+      "index": 110,
+      "name": "(주)노드큐브",
+      "category": "디지털 마케팅",
+      "industryDetail": "데이터 분석, 전략, 광고 콘텐츠를 결합한 퍼포먼스 마케팅 서비스를 제공.",
+      "status": "verified",
+      "sourceType": "official",
+      "sources": [
+        {
+          "url": "https://nodecube.co.kr/",
+          "title": "NODECUBE 공식 사이트",
+          "evidence": "퍼포먼스 마케팅 에이전시 소개와 SH드림타워 310호 주소 확인."
+        }
+      ],
+      "matchBasis": "공식 사이트의 노드큐브 명칭과 310호 일치.",
+      "note": "동작구의 동명 개인사업자와 구분.",
+      "reviewedAt": "2026-10-26"
+    },
+    {
+      "index": 111,
+      "name": "위아클래스",
+      "category": "영상제작·모션그래픽",
+      "industryDetail": "기업 홍보영상, 모션그래픽, 디자인 등 영상 콘텐츠를 기획·제작.",
+      "status": "verified",
+      "sourceType": "official",
+      "sources": [
+        {
+          "url": "https://www.weareclass.com/",
+          "title": "위아클래스 공식 사이트",
+          "evidence": "기업 홍보영상과 모션그래픽 등 제작 서비스 소개."
+        },
+        {
+          "url": "https://m.saramin.co.kr/job-search/view?rec_idx=55134884&searchword=%EC%9C%84%EC%95%84&t_category=search&t_content=connect_recruit",
+          "title": "위아클래스 경력 모션그래픽 영상제작 채용",
+          "evidence": "공식 도메인 weareclass.com을 연결하며 SH드림타워 3층을 근무지·회사주소로 명시."
+        }
+      ],
+      "matchBasis": "동일 업체 채용공고가 SH드림타워 3층과 공식 홈페이지를 함께 연결.",
+      "note": "공식 사이트 하단 주소는 영등포구 양산로85로 다르므로 현재 입주 여부와 311호는 별도 확인 필요; 업종은 동일 회사 연결 근거로 확인.",
+      "reviewedAt": "2026-10-26"
+    },
+    {
+      "index": 112,
+      "name": "(주)티유",
+      "category": "소프트웨어 시험·QA",
+      "industryDetail": "소프트웨어 품질보증 컨설팅, 기능·비기능 시험 및 테스트 자동화를 제공.",
+      "status": "verified",
+      "sourceType": "official",
+      "sources": [
+        {
+          "url": "https://tyou.kr/",
+          "title": "티유 공식 사이트",
+          "evidence": "소프트웨어 QA·시험·자동화 서비스와 SH드림타워 312호 사업장 기재."
+        }
+      ],
+      "matchBasis": "법인명과 312호 주소 일치.",
+      "note": "",
+      "reviewedAt": "2026-10-26"
+    },
+    {
+      "index": 113,
+      "name": "뉴엘텍스",
+      "category": "세무·회계",
+      "industryDetail": "세무사무실을 운영하며 세무·회계 업무를 수행.",
+      "status": "verified",
+      "sourceType": "business_directory",
+      "sources": [
+        {
+          "url": "https://www.jobkorea.co.kr/Recruit/GI_Read/50105819",
+          "title": "뉴엘택스 세무사사무실 신입직원 채용",
+          "evidence": "뉴엘택스 세무사무실과 가산디지털1로 205-15, 313호 근무지가 함께 표시됨."
+        }
+      ],
+      "matchBasis": "유사 명칭 뉴엘택스가 안내판과 동일한 313호에 위치.",
+      "note": "",
+      "reviewedAt": "2026-10-26",
+      "nameCorrectionCandidate": "뉴엘택스"
+    },
+    {
+      "index": 114,
+      "name": "(주)비전플러스원",
+      "category": "통신판매",
+      "industryDetail": "공개 기업정보에서 통신 판매업으로 분류됩니다.",
+      "status": "verified",
+      "sourceType": "business_directory",
+      "sources": [
+        {
+          "url": "https://bigvalue.ai/dashboard/biz/1958103681",
+          "title": "비전플러스원 사업자정보",
+          "evidence": "동명 법인이 동일 건물의 1113호로 표시되어 안내판 314호와 다름."
+        },
+        {
+          "url": "https://m.nicebizinfo.com/ep/EP0100M002GE.nice?kiscode=RV2612",
+          "title": "비전플러스원 기업상세",
+          "evidence": "동명 법인의 통신 판매업 분류를 확인했으나 표시 주소는 11층으로 안내판과 불일치."
+        }
+      ],
+      "matchBasis": "사업자정보의 법인명과 SH드림타워 주소를 대조하고 동명 법인의 기업 업종 분류를 확인했습니다.",
+      "note": "공개 사업자정보는 1113호로 안내판의 314호와 다릅니다. 같은 상호·건물의 사업분야만 반영했으며 호실은 안내판 표기를 유지합니다.",
+      "reviewedAt": "2026-10-26"
+    },
+    {
+      "index": 115,
+      "name": "바르고컴퍼니(주)",
+      "category": "응용 소프트웨어 개발",
+      "industryDetail": "기업정보상 응용 소프트웨어 개발·공급업이며 구독서비스 기획·마케팅 관련 인력을 채용.",
+      "status": "verified",
+      "sourceType": "business_directory",
+      "sources": [
+        {
+          "url": "https://www.jobkorea.co.kr/Recruit/GI_Read/49156031",
+          "title": "바르고컴퍼니 구독서비스 기획·마케팅 채용",
+          "evidence": "응용 소프트웨어 개발 및 공급업, 가산디지털1로 205-15 315호를 명시."
+        }
+      ],
+      "matchBasis": "법인명과 315호 일치.",
+      "note": "같은 공고의 소개문에는 홈케어 브랜드 수입·유통 사업도 소개되어, 표시 업종은 명시된 산업 분류를 사용.",
+      "reviewedAt": "2026-10-26"
+    },
+    {
+      "index": 116,
+      "name": "(주)좋은효소",
+      "category": "효소·건강식품 유통",
+      "industryDetail": "한국파비스 효소제품을 유통하고 관련 건강정보·교육 서비스를 운영.",
+      "status": "verified",
+      "sourceType": "official",
+      "sources": [
+        {
+          "url": "https://www.wellzyme.co.kr/myofficePlus/os/common/page/os/1/info/osStory2",
+          "title": "좋은효소 회사소개",
+          "evidence": "효소제품 전문 유통기업 소개와 SH드림타워 207·208호 주소 확인."
+        }
+      ],
+      "matchBasis": "법인명과 안내판에 포함된 207·208호가 일치.",
+      "note": "201호 사용 여부는 공식 사이트에서 별도 확인되지 않음.",
+      "reviewedAt": "2026-10-26"
+    },
+    {
+      "index": 117,
+      "name": "(주)지산손해사정법인 서울센터",
+      "category": "손해사정",
+      "industryDetail": "신체·재물 손해에 대한 보험금 관련 조사·손해액 산정 및 손해사정 서비스를 제공.",
+      "status": "verified",
+      "sourceType": "official",
+      "sources": [
+        {
+          "url": "https://jisanloss.co.kr/",
+          "title": "지산손해사정법인 공식 사이트",
+          "evidence": "손해사정 서비스 및 서울센터 가산디지털1로 205-15, 202호 안내."
+        }
+      ],
+      "matchBasis": "공식 서울센터 주소 202호가 일치.",
+      "note": "",
+      "reviewedAt": "2026-10-26"
+    },
+    {
+      "index": 118,
+      "name": "(주)여정트래블",
+      "category": "여행알선·골프여행",
+      "industryDetail": "어니언골프 브랜드로 국내외 골프여행 상품과 항공예약 등을 제공.",
+      "status": "verified",
+      "sourceType": "official",
+      "sources": [
+        {
+          "url": "https://www.oniongolf.com/",
+          "title": "어니언골프 · 여정트래블",
+          "evidence": "골프여행·항공예약 서비스와 여정트래블 법인명, SH드림타워 203호 주소 확인."
+        }
+      ],
+      "matchBasis": "공식 사이트 법인명과 203호 일치.",
+      "note": "",
+      "reviewedAt": "2026-10-26"
+    },
+    {
+      "index": 119,
+      "name": "(주)굿로지스",
+      "category": "택배·물류",
+      "industryDetail": "택배 운송 및 관련 물류 업무를 운영.",
+      "status": "verified",
+      "sourceType": "business_directory",
+      "sources": [
+        {
+          "url": "https://www.saramin.co.kr/zf_user/company-info/view/csn/UHlqblVJcVR1eTZ6N0E3Zkptalh4Zz09/company_nm/%28%EC%A3%BC%29%EA%B5%BF%EB%A1%9C%EC%A7%80%EC%8A%A4",
+          "title": "굿로지스 기업정보",
+          "evidence": "택배업 분류와 SH드림타워 204호 주소를 확인."
+        }
+      ],
+      "matchBasis": "법인명과 204호 일치.",
+      "note": "",
+      "reviewedAt": "2026-10-26"
+    },
+    {
+      "index": 120,
+      "name": "아시안뷰티서플라이(주)",
+      "category": "업종 미확인",
+      "industryDetail": "입주기업의 사업내용을 뒷받침할 공개 자료를 확보하지 못함.",
+      "status": "unverified",
+      "sourceType": "unverified",
+      "sources": [],
+      "matchBasis": "아시안뷰티서플라이 상호와 SH드림타워·가산 주소를 두 검색엔진에서 조회했으나 일치 자료 없음.",
+      "note": "해외 유사 상호 업체만 검색되어 입주기업 업종 근거로 사용하지 않음.",
+      "reviewedAt": "2026-10-26"
+    },
+    {
+      "index": 121,
+      "name": "세무회계 세로",
+      "category": "세무·회계",
+      "industryDetail": "세무신고, 기장과 회계 관련 세무사무실 업무를 수행.",
+      "status": "verified",
+      "sourceType": "business_directory",
+      "sources": [
+        {
+          "url": "https://www.jobkorea.co.kr/Recruit/GI_Read/48708232",
+          "title": "세무회계 세로 채용공고",
+          "evidence": "회계·세무·법무 업종과 SH드림타워 206호 근무지 기재."
+        },
+        {
+          "url": "https://www.saramin.co.kr/zf_user/jobs/view?rec_idx=54073854",
+          "title": "세무회계 세로 직원 채용",
+          "evidence": "세무사업 및 206호 근무지 확인."
+        }
+      ],
+      "matchBasis": "상호와 206호 일치.",
+      "note": "",
+      "reviewedAt": "2026-10-26"
+    },
+    {
+      "index": 122,
+      "name": "에프에스아이파이낸셜대부(주)",
+      "category": "업종 미확인",
+      "industryDetail": "법인명과 업종 후보 자료가 있으나 입주기업과의 연결을 확인하지 못함.",
+      "status": "unverified",
+      "sourceType": "unverified",
+      "sources": [
+        {
+          "url": "https://cookiedeal.io/company-search/6068665799/%EC%97%90%ED%94%84%EC%97%90%EC%8A%A4%EC%95%84%EC%9D%B4%ED%8C%8C%EC%9D%B4%EB%82%B8%EC%85%9C%EB%8C%80%EB%B6%80",
+          "title": "에프에스아이파이낸셜대부 기업정보",
+          "evidence": "동명 기업의 보험 대리·중개업 분류가 있으나 SH드림타워 209호 일치 근거를 확인하지 못함."
+        }
+      ],
+      "matchBasis": "상호·주소·건물명으로 검색했으나 209호와 대조할 자료 없음.",
+      "note": "상호의 대부 표현만으로 업종을 추정하지 않음. 공개 분류도 입주 주소와 연결되지 않아 보류.",
+      "reviewedAt": "2026-10-26"
+    },
+    {
+      "index": 123,
+      "name": "(주)에프에스아이금융서비스",
+      "category": "업종 미확인",
+      "industryDetail": "동명 보험대리점은 확인되지만 안내판의 입주기업과 연결할 주소 근거가 부족함.",
+      "status": "unverified",
+      "sourceType": "unverified",
+      "sources": [
+        {
+          "url": "https://test.microprotect.com/",
+          "title": "마이크로프로텍트 보험서비스 안내",
+          "evidence": "에프에스아이금융서비스를 보험대리점으로 표시하나 사이트 주소는 가산디지털2로35로 SH드림타워와 다름."
+        }
+      ],
+      "matchBasis": "법인명·가산·SH드림타워·도로명 조합 검색 결과에서 210·211호 확인 불가.",
+      "note": "보험대리·중개업 후보 자료는 있으나 다른 주소여서 동일 입주기업 업종으로 확정하지 않음.",
+      "reviewedAt": "2026-10-26"
+    },
+    {
+      "index": 124,
+      "name": "아이엠모바일",
+      "category": "휴대전화·중고폰 판매",
+      "industryDetail": "중고·자급제 스마트폰을 온라인으로 판매.",
+      "status": "verified",
+      "sourceType": "official",
+      "sources": [
+        {
+          "url": "https://minishop.gmarket.co.kr/IAMMOBILE",
+          "title": "아이엠모바일 G마켓 판매점",
+          "evidence": "중고폰 판매 소개와 판매자 상호, SH드림타워 212호 사업장 주소 기재."
+        }
+      ],
+      "matchBasis": "판매자 정보의 상호와 212호 주소 일치.",
+      "note": "판매자가 직접 등록한 온라인 판매점 정보 기준. 일부 상품에는 별도 사업장 주소와 212호 반품지가 병기됨.",
+      "reviewedAt": "2026-10-26"
+    },
+    {
+      "index": 125,
+      "name": "(주)어니스트원",
+      "category": "인재채용·헤드헌팅",
+      "industryDetail": "헤드헌팅, 평판조회 및 커리어 컨설팅 서비스를 제공.",
+      "status": "verified",
+      "sourceType": "official",
+      "sources": [
+        {
+          "url": "https://honest1.co.kr/",
+          "title": "어니스트원 공식 사이트",
+          "evidence": "서치펌·평판조회·커리어 컨설팅 소개와 SH드림타워 213호 주소 기재."
+        }
+      ],
+      "matchBasis": "공식 법인명과 213호가 일치.",
+      "note": "",
+      "reviewedAt": "2026-10-26"
+    },
+    {
+      "index": 126,
+      "name": "조영 인테리어",
+      "category": "인테리어 디자인",
+      "industryDetail": "인테리어 디자인 관련 서비스를 제공하는 것으로 지역 업체정보에 분류됨.",
+      "status": "verified",
+      "sourceType": "business_directory",
+      "sources": [
+        {
+          "url": "https://place.udanax.org/p/4186899/%EC%A1%B0%EC%98%81%EC%9D%B8%ED%85%8C%EB%A6%AC%EC%96%B4",
+          "title": "조영인테리어 지역 업체정보",
+          "evidence": "인테리어 분류와 가산디지털1로 205-15 주소 기재."
+        },
+        {
+          "url": "https://bizsurfing.com/p/315942/%EC%88%98%EC%88%98%EC%BB%B4%ED%8D%BC%EB%8B%88",
+          "title": "SH드림타워 인근 인테리어 업체정보",
+          "evidence": "같은 건물 주변 업체목록에 조영인테리어가 2층 인테리어 업체로 표시됨."
+        }
+      ],
+      "matchBasis": "공백을 제외한 상호와 동일 도로명 주소·2층 정보가 일치.",
+      "note": "공식 사이트와 214호 직접 표기는 확보하지 못해 지역 업체 분류 수준으로 기재.",
+      "reviewedAt": "2026-10-26"
+    },
+    {
+      "index": 127,
+      "name": "벨라토프(주)",
+      "category": "업종 미확인",
+      "industryDetail": "입주기업과 일치하는 공개 사업정보를 찾지 못함.",
+      "status": "unverified",
+      "sourceType": "unverified",
+      "sources": [],
+      "matchBasis": "벨라토프 상호·회사·215호로 두 검색엔진에서 조회했으나 일치 기업 자료 없음.",
+      "note": "유사 철자의 스포츠·상품 검색 결과만 있어 채택하지 않음. 상호 전사 확인이 필요할 수 있음.",
+      "reviewedAt": "2026-10-26"
+    },
+    {
+      "index": 128,
+      "name": "브루잉커피 SH드림타워점",
+      "category": "카페·음료",
+      "industryDetail": "커피와 음료, 토스트·베이글 등 간식류를 판매하는 카페.",
+      "status": "verified",
+      "sourceType": "business_directory",
+      "sources": [
+        {
+          "url": "https://www.diningcode.com/profile.php?rid=HpgAzci8pRJI",
+          "title": "브루인커피 SH드림타워점",
+          "evidence": "카페 메뉴와 가산디지털1로 205-15, 1층 101호 주소 확인."
+        },
+        {
+          "url": "https://app.passorder.co.kr/normal/cac0a922-17bf-4ff0-b3f8-8ac9ed503738/menus",
+          "title": "브루인커피 SH드림타워점 패스오더 메뉴",
+          "evidence": "동일 지점명의 커피·카페 메뉴 안내."
+        }
+      ],
+      "matchBasis": "유사 명칭 브루인커피 SH드림타워점의 101호 주소가 일치.",
+      "note": "",
+      "reviewedAt": "2026-10-26",
+      "nameCorrectionCandidate": "브루인커피 SH드림타워점"
+    },
+    {
+      "index": 129,
+      "name": "오케이금천",
+      "category": "소프트웨어·정보통신",
+      "industryDetail": "기업정보상 정보통신업 기반 IT·소프트웨어 개발 사업자로 안내됨.",
+      "status": "verified",
+      "sourceType": "business_directory",
+      "sources": [
+        {
+          "url": "https://moneypin.biz/bizno/detail/8283901315/",
+          "title": "오케이금천 사업자정보",
+          "evidence": "정보통신업 기반 IT·S/W개발 기업 소개와 가산디지털1로 205-15, 101·102호 주소 기재."
+        }
+      ],
+      "matchBasis": "상호 및 안내판 102호를 포함하는 사업장 주소 일치.",
+      "note": "세부 제품·서비스는 공개 자료에서 확인되지 않아 넓은 업종 분류만 기재.",
+      "reviewedAt": "2026-10-26"
+    },
+    {
+      "index": 130,
+      "name": "세컨퍼니처",
+      "category": "인테리어 디자인",
+      "industryDetail": "건물 상가정보에 인테리어 디자인업으로 분류됨.",
+      "status": "verified",
+      "sourceType": "business_directory",
+      "sources": [
+        {
+          "url": "https://zippoom.com/%EB%B6%80%EB%8F%99%EC%82%B0/%EC%84%9C%EC%9A%B8-%EA%B8%88%EC%B2%9C%EA%B5%AC-%EA%B0%80%EC%82%B0%EB%8F%99-SH%EB%93%9C%EB%A6%BC%ED%83%80%EC%9B%8C/m55qve",
+          "title": "SH드림타워 건물·상가정보",
+          "evidence": "SH드림타워 1층 입점업체 세컨퍼니쳐를 인테리어 디자인업으로 표시."
+        }
+      ],
+      "matchBasis": "유사 표기 세컨퍼니쳐가 동일 건물 1층 업체로 기재됨.",
+      "note": "공개 자료는 세컨퍼니쳐로 표기하며 103호 직접 확인은 불가. 입력명은 유지.",
+      "reviewedAt": "2026-10-26",
+      "nameCorrectionCandidate": "세컨퍼니쳐"
+    },
+    {
+      "index": 131,
+      "name": "워크앤파트너스",
+      "category": "건설관리 소프트웨어",
+      "industryDetail": "건설·인테리어 현장의 공사일보, 견적, 정산, 인력관리 등을 지원하는 스페이스노트 서비스를 운영.",
+      "status": "verified",
+      "sourceType": "official",
+      "sources": [
+        {
+          "url": "https://spacenote.co.kr/",
+          "title": "스페이스노트 공식 사이트",
+          "evidence": "운영사 워크앤파트너스 및 건설·인테리어 관리 SaaS 서비스, SH드림타워 104호 주소 확인."
+        }
+      ],
+      "matchBasis": "공식 서비스 운영사와 104호 주소 일치.",
+      "note": "",
+      "reviewedAt": "2026-10-26"
+    },
+    {
+      "index": 132,
+      "name": "SH성공드림 공인중개사사무소",
+      "category": "부동산 중개",
+      "industryDetail": "지식산업센터·상가·사무실 등 부동산 매매와 임대차 중개.",
+      "status": "verified",
+      "sourceType": "business_directory",
+      "sources": [
+        {
+          "url": "https://land.daara.co.kr/article/list.php?user_id=mjk72450429",
+          "title": "SH성공드림 공인중개사사무소 매물 안내",
+          "evidence": "동일 중개사무소명과 SH드림타워 105호 주소 및 매매·임대 매물 확인."
+        }
+      ],
+      "matchBasis": "중개사무소명과 105호 일치.",
+      "note": "",
+      "reviewedAt": "2026-10-26"
+    }
+  ]
+}
